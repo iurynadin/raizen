@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* fontes usadas 
+DIN Next LT Pro:
+Ultra Light
+Light
+Regular
+Bold
+
+*/
+
+@font-face {
+    font-family: "DIN-light";
+    src: url("./fonts/DINNextLTPro-Light.woff2") format("woff2"),
+        url("./fonts/DINNextLTPro-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "DIN-ultralight";
+    src: url("./fonts/DINNextLTPro-UltraLight.woff2") format("woff2"),
+        url("./fonts/DINNextLTPro-UltraLight.woff") format("woff");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "DIN-regular";
+    src: url("./fonts/DINNextLTPro-Regular.woff2") format("woff2"),
+        url("./fonts/DINNextLTPro-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "DIN-medium";
+    src: url("./fonts/DINNextLTPro-Medium.woff2") format("woff2"),
+        url("./fonts/DINNextLTPro-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "DIN-bold";
+    src: url("./fonts/DINNextLTPro-Bold.woff2") format("woff2"),
+        url("./fonts/DINNextLTPro-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@layer components {
+    body {
+        @apply m-0 p-0 box-border font-din;
+    }
+
+    .bpvisor {
+        @apply fixed bottom-0 w-8 h-8 left-0 z-50 bg-gray-400 sm:bg-yellow-400 md:bg-red-600 lg:bg-blue-500 xl:bg-green-400 2xl:bg-gray-800 text-center;
+        p {
+            @apply font-bold text-lg;
+            &::before {
+                content: "xs";
+            }
+        }
+        @media (min-width: 640px) {
+            p::before {
+                content: "sm";
+            }
+        }
+        @media (min-width: 768px) {
+            p::before {
+                content: "md";
+            }
+        }
+        @media (min-width: 1024px) {
+            p::before {
+                content: "lg";
+            }
+        }
+        @media (min-width: 1280px) {
+            p::before {
+                content: "xl";
+            }
+        }
+        @media (min-width: 1536px) {
+            p::before {
+                content: "2xl";
+            }
+        }
+    }
+
+    h1 {
+    }
+
+    section {
+        @apply relative w-full;
+    }
+
+    header {
+        @apply transition-all duration-300;
+
+        .bgTopNav.is-hovered {
+            @apply lg:h-full;
+        }
+        nav .bgTopNav.is-active {
+            @apply h-[580px] 2xl:h-[820px] lg:rounded-3xl;
+        }
+
+        nav.topNav.is-active {
+            @apply overflow-visible;
+        }
+
+        .header__hambcont {
+            transition: 0.4s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+            @apply absolute lg:relative h-20 md:w-12 xl:w-20 flex items-center justify-center transition-all duration-300 z-40;
+        }
+        .header__hambcont.mobile-active {
+            @apply translate-x-4;
+        }
+
+        .navbar-burger {
+            @apply relative transition-all duration-300 w-6 lg:w-[32px] h-[21px] block z-50;
+        }
+
+        .navbar-burger span {
+            @apply absolute h-[3px] w-full block transition-all duration-300;
+        }
+
+        .navbar-burger span:nth-child(2) {
+            top: calc(50% - 2px);
+        }
+        .navbar-burger span:nth-child(3) {
+            top: calc(50% + 6px);
+        }
+
+        .navbar-burger.is-active span:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+        .navbar-burger.is-active span:nth-child(2) {
+            opacity: 0;
+        }
+        .navbar-burger.is-active span:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+    }
+
+    header.is-active {
+        /*  .header__hambcont {
+            @apply left-4;
+        } */
+    }
+
+    .full-width {
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+    }
+}
