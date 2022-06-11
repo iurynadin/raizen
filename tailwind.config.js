@@ -7,6 +7,13 @@ module.exports = {
                 DEFAULT: "1rem",
             },
         },
+        screens: {
+            'sm': '640px',
+            'md': '768px',
+            'lg': '1020px',
+            'xl': '1214px',
+            '2xl': '1536px',
+        },
         extend: {
             colors: {
                 amarelo: "#FDB515",
@@ -29,13 +36,15 @@ module.exports = {
                 din_bold: ["DIN-bold"],
             },
             width: {
-                contentsec_lg: "calc(100% - 240px)"
+                contentsec_xl: "calc(100% - 240px)"
             },
             boxShadow: {
             },
             aspectRatio: {
             },
             backgroundImage: {
+                herovideo: "url('../video/herovideo.jpg')",
+                moviefilter: "url('../svgs/movie-filter.svg')",
             },
             boxShadow: {
             },
