@@ -83,12 +83,12 @@ Bold
                 content: "md";
             }
         }
-        @media (min-width: 960px) {
+        @media (min-width: 1020px) {
             p::before {
                 content: "lg";
             }
         }
-        @media (min-width: 1280px) {
+        @media (min-width: 1214px) {
             p::before {
                 content: "xl";
             }
@@ -169,7 +169,7 @@ Bold
     }
 
     .contentsec{
-        @apply relative w-full lg:w-contentsec_lg lg:ml-[240px];
+        @apply relative w-full xl:w-contentsec_xl xl:ml-[240px];
 
         .container{
             @apply relative border border-red-600

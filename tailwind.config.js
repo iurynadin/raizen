@@ -10,8 +10,8 @@ module.exports = {
         screens: {
             'sm': '640px',
             'md': '768px',
-            'lg': '960px',
-            'xl': '1280px',
+            'lg': '1020px',
+            'xl': '1214px',
             '2xl': '1536px',
         },
         extend: {
@@ -36,7 +36,7 @@ module.exports = {
                 din_bold: ["DIN-bold"],
             },
             width: {
-                contentsec_lg: "calc(100% - 240px)"
+                contentsec_xl: "calc(100% - 240px)"
             },
             boxShadow: {
             },
