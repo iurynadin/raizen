@@ -1,1 +1,3 @@
-# hoc
+# Raízen
+yarn
+tailwind
