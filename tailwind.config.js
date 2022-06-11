@@ -18,7 +18,7 @@ module.exports = {
             colors: {
                 amarelo: "#FDB515",
                 cinza2: "#F4F4F4",
-                cinza1: "##D6D6D6",
+                cinza1: "#D6D6D6",
                 cinza0: "#6E6E6E",
                 cinzatxt: "#58595B",
                 cyan: "#05C3DE",
@@ -36,7 +36,9 @@ module.exports = {
                 din_bold: ["DIN-bold"],
             },
             width: {
-                contentsec_xl: "calc(100% - 240px)"
+                contentsec_xl: "calc(100% - 240px)",
+                secondary_xs: "calc(100% - 8px)",
+                secondary_md: "calc(100% - 20px)",
             },
             boxShadow: {
             },

@@ -6,16 +6,112 @@
         <link rel="stylesheet" type="text/css" href="css/style.css?v=0.9.60" />
     </head>
     <body class="w-full">
-        <!-- Sómente para identificar breakpoint. Remover em produção -->
         <div class="bpvisor"><p></p></div>
         <main>
+
+            <!-- HeaderNav -->
+            <div class="header">
+                <img src="./svgs/logo.svg" class="w-[98px]" alt="Logo Raizen">
+                <a role="button" class="navbar-burger" aria-label="menu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <!-- secondaryNav   --> 
+            <div class="secondaryNav">
+                <span class="text-roxo text-[15px] leading-tight"> RELATÓRIO ANUAL<br>DE SUSTENTABILIDADE <strong>2021/2022</strong> </span>
+                <div class="w-full h-px block bg-roxo mb-6"></div>
+
+                <nav>
+                    <ul class="secondaryNav__menu mb-4 p-0 flex flex-col">
+                        <li>
+                            <a href="#liderando">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-cinza0" width="40.112" height="42.18" viewBox="0 0 40.112 42.18">
+                                    <path d="M17.323,25.869a11.278,11.278,0,0,0-7.3-2.808v6.017L2,21.056l8.022-8.022V19.05a15.306,15.306,0,0,1,9.286,3.189,15.984,15.984,0,0,0-1.986,3.63m16.767,3.209V23.062c-1,0-9.025.321-9.928,8.423a6.02,6.02,0,1,1-7.681,3.67,5.9,5.9,0,0,1,3.67-3.67A13.533,13.533,0,0,1,34.089,19.05V13.034l8.022,8.022-8.022,8.022M24.061,37.1a2.006,2.006,0,1,0-2.006,2.006A2.006,2.006,0,0,0,24.061,37.1M20.05,21.3a17.561,17.561,0,0,1,4.011-3.389V9.022h6.017L22.056,1,14.034,9.022H20.05Z" transform="translate(-2 -1)"/>
+                                </svg>
+                                <span>Liderando a<br><strong>transição energética</strong></span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#destaques-safra">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-cinza0" width="40.112" height="32.089" viewBox="0 0 40.112 32.089">
+                                    <path id="ico-safra" d="M8.017,4V18.561A9.022,9.022,0,1,0,19.99,28.067h8.423a6.2,6.2,0,0,0-.341,2.006,6.017,6.017,0,1,0,12.034,0,5.72,5.72,0,0,0-.361-2.006h2.367V22.05A4,4,0,0,0,38.1,18.039H28.153L25.365,4H8.017m4.011,4.011H22.056l2.006,10.028v6.017H19.529a9.085,9.085,0,0,0-7.5-5.957V8.011m-1,14.541a4.513,4.513,0,1,1-4.513,4.513,4.513,4.513,0,0,1,4.513-4.513m23.064,4.513a3.008,3.008,0,1,1-3.008,3.008A3.008,3.008,0,0,1,34.089,27.064Z" transform="translate(-2 -4)"/>
+                                </svg>
+                                <span>Destaques<br><strong>da safra</strong></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#mensagem">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-cinza0" width="40.112" height="40.112" viewBox="0 0 40.112 40.112">
+                                    <path id="ico-message" d="M16.039,20.05h18.05v4.011H16.039V20.05m18.05-8.022H10.022v4.011H34.089V12.028m8.022-6.017v36.1l-8.022-8.022H6.011A4.01,4.01,0,0,1,2,30.078V6.011A4.023,4.023,0,0,1,6.011,2H38.1a4.01,4.01,0,0,1,4.011,4.011m-4.011,0H6.011V30.078H35.754L38.1,32.425Z" transform="translate(-2 -2)"/>
+                                </svg>
+                                <span>Mensagem do<br><strong>presidente</strong></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#modelo-unico">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-3 fill-cinza0" width="32.089" height="40.112" viewBox="0 0 32.089 40.112">
+                                    <path id="ico-modelounico-dna" d="M4,2H8.011V6.011c0,2.888,1.364,5.235,3.771,7.581a45.651,45.651,0,0,0,6.438,4.854l-3.67,2.387A40.265,40.265,0,0,1,9.014,16.46C6.146,13.673,4,10.223,4,6.011V2M32.078,2h4.011V6.011c0,4.212-2.146,7.661-5.014,10.449a60.468,60.468,0,0,1-9.948,7.28,61.927,61.927,0,0,0-9.346,6.779C9.375,32.866,8.011,35.213,8.011,38.1v4.011H4V38.1c0-4.212,2.146-7.661,5.014-10.449a60.468,60.468,0,0,1,9.948-7.28,61.927,61.927,0,0,0,9.346-6.779c2.407-2.347,3.771-4.693,3.771-7.581V2M25.54,23.279a40.264,40.264,0,0,1,5.535,4.372c2.868,2.788,5.014,6.237,5.014,10.449v4.011H32.078V38.1c0-2.888-1.364-5.235-3.771-7.581a45.652,45.652,0,0,0-6.438-4.854l3.67-2.387M10.017,4.006H30.073V6.011l-.12,1H10.137l-.12-1V4.006m1.364,6.017H28.709A14.784,14.784,0,0,1,26.9,12.148l-1.023.882H14.168l-.983-.882a14.784,14.784,0,0,1-1.805-2.126m2.828,21.059H25.921l.983.882a14.784,14.784,0,0,1,1.805,2.126H11.381a14.784,14.784,0,0,1,1.805-2.126l1.023-.882M10.137,37.1H29.952l.12,1v2.006H10.017V38.1Z" transform="translate(-4 -2)"/>
+                                </svg>
+                                <span class="ml-1">Modelo único<br><strong>e irreplicável</strong></span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#modelo-unico">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4  fill-cinza0" width="26.498" height="26.498" viewBox="0 0 26.498 26.498">
+                                    <path id="ico-crescimento" d="M7.184,21.828,3,25.928V14.157H7.184m6.973,5.1-2.19-1.869L9.973,19.234V8.579h4.184m6.973,8.368L16.946,21.13V3H21.13m3.919,13.681-2.524-2.524H29.5V21.13l-2.5-2.5L16.946,28.606l-4.839-4.212L6.835,29.5H3l9.023-8.842,4.923,4.156" transform="translate(-3 -3)" />
+                                </svg>
+                                <span>crescimento<br><strong>estruturado</strong></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#proposta">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-cinza0" width="38.106" height="38.105" viewBox="0 0 38.106 38.105">
+                                    <path id="ico-propostavalor" d="M41.106,8.017v4.011H35.089v6.017H31.078V12.028H25.061V8.017h6.017V2h4.011V8.017h6.017M35.089,36.1H7.011V8.017H19.045V4.006H7.011A4.023,4.023,0,0,0,3,8.017V36.1a4.023,4.023,0,0,0,4.011,4.011H35.089A4.023,4.023,0,0,0,39.1,36.1V24.062H35.089V36.1M27.067,24.062v8.022h4.011V24.062H27.067m-8.022,8.022h4.011V16.039H19.045V32.084m-4.011,0V20.05H11.022V32.084Z" transform="translate(-3 -2)" />
+                                </svg>
+                                <span><strong>Proposta de valor</strong><br>no longo prazo</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#saibamais">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-cinza0" width="40.112" height="40.111" viewBox="0 0 40.112 40.111">
+                                    <path id="ico-saibamais" d="M32.084,26.067h4.011v6.017h6.017V36.1H36.095v6.017H32.084V36.1H26.067V32.084h6.017V26.067M38.1,22.056A16.013,16.013,0,0,0,28.073,7.194v.822a4.023,4.023,0,0,1-4.011,4.011H20.05v4.011a2.011,2.011,0,0,1-2.006,2.006H14.034v4.011H26.067a2.046,2.046,0,0,1,2.006,1.625,12.022,12.022,0,0,0-3.129,18.231l-2.888.2A20.056,20.056,0,1,1,42.112,22.056l-.2,2.888A12.071,12.071,0,0,0,38.1,22.738v-.682M20.05,37.96V34.089a4.023,4.023,0,0,1-4.011-4.011V28.073L6.432,18.466A15.968,15.968,0,0,0,20.05,37.96Z" transform="translate(-2 -2)"/>
+                                </svg>
+                                <span>Saiba Mais</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="w-full h-px block bg-roxo mb-6"></div>
+
+                    <a class="flex justify-start items-start" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 mr-4 block fill-cinza0" width="25.251" height="50.275" viewBox="0 0 25.251 50.275">
+                            <path id="ico-baixar" d="M-7320,975.578l2.98-2.98,5.414,5.434V964.492h4.2v13.541l5.434-5.434,2.959,2.98-10.492,10.49Zm3.006-8.524a3.009,3.009,0,0,1-3.006-3.005V940.005a3.009,3.009,0,0,1,3.006-3.005h12.021l9.017,9.016v18.033a3.009,3.009,0,0,1-3.005,3.005h-5.976v-3.005h5.976v-16.53h-7.514v-7.514h-10.519v24.044h3.057v3.007Zm3.005-6.011v-3.005h7.514v3.005Zm0-6.011v-3.005h12.021v3.005Z" transform="translate(7320.707 -936.5)"  stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+                        </svg>
+                        <span class="uppercase leading-tight text-[#78787A] text-lg">
+                            Baixar <br><strong>Relatório Completo</strong> <br>
+                        </span>
+                    </a>
+
+                    <ul class="sidebar__lang flex justify-around items-center mb-10 mt-4">
+                        <li><a href="#">PT</a></li>
+                        <li><a href="#">EN</a></li>
+                        <li><a href="#">ES</a></li>
+                    </ul>
+
+                </nav>
+            </div>
 
             <!-- Sidebar -->
             <div class="sidebar hidden xl:flex xl:w-[240px] xl:h-screen fixed z-30 bg-white top-0 left-0 flex-col items-start justify-between hover:xl:w-[320px] transition-all duration-[200]">
                 
                 <div class=" pt-10 pl-[33px]">
                     <img src="./svgs/logo.svg" class="w-[143px] mb-8" alt="Logo Raizen">
-                    <span class="text-[15px] leading-snug text-[#78787A] inline-block">RELATÓRIO ANUAL DE<br> SUSTENTABILIDADE<span class="font-din_bold block">2021/2022</span> </span>
+                    <span class="text-[15px] leading-snug text-[#7878s7A] inline-block">RELATÓRIO ANUAL DE<br> SUSTENTABILIDADE<span class="font-din_bold block">2021/2022</span> </span>
                 </div>
 
                 <nav class="w-full flex flex-col items-center overflow-hidden">
@@ -105,7 +201,7 @@
                 </ul>
             </div>
 
-            <!-- Conteúdo -->
+
 
             <!-- Hero -->
             <section class="contentsec relative h-screen bg-roxo flex flex-col items-end justify-center xl:pr-[120px]">
@@ -113,7 +209,7 @@
                 <h1 class="text-white uppercase text-right font-din_ultralight lg:text-[56px] leading-tight relative z-[5]">redefinindo o <br> <span class="font-din_bold">futuro da energia</span></h1>
 
                 <div class="group w-full absolute bottom-0 left-0 z-[5] flex flex-col justify-start items-center pb-2">
-                    <img src="./svgs/ico-scroll.svg" class="w-6 2xl:w-10 opacity-50 group-hover:opacity-100 group-hover:-translate-y-2 transition-all duration-300" alt="Scroll">
+                    <img src="./svgs/ico-scroll.svg" class="hidden lg:block w-6 2xl:w-10 opacity-50 group-hover:opacity-100 group-hover:-translate-y-2 transition-all duration-300" alt="Scroll">
 
                     <img src="./svgs/scroll-arrows.svg" class="w-3 2xl:w-[17px] opacity-0 group-hover:opacity-100 transition-all duration-300">
                 </div>
@@ -165,22 +261,65 @@
                     </div>
 
                     
-                    <div class="grid lg:grid-cols-2 gap-20 mt-14">
-                        <div class="col-span-2 border pl-24">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 mt-14">
+                        <div class="col-span-1 lg:col-span-2 border pl-24">
                             <h4 class="text-roxo">No mesmo periodo,</h4>
                         </div>
 
-                        <div class="border border-black pr-10 pl-4 flex flex-row justify-between items-center">
-                            <img src="./svgs/ico-liderando-acucar.svg" class="w-10 mr-8" alt="">
-                            <div class="border flex flex-col flex-grow text-[#78787A]">
-                                <div class="w-full h-px block bg-roxo mb-10"></div>
-                                <span class="font-din_bold text-[30px]">fabricamos</span>
+                        <div class="pr-10 pl-4 flex flex-row justify-between items-start">
+                            <img src="./svgs/ico-liderando-acucar.svg" class="w-10 mr-8 pt-14" alt="">
+                            <div class="flex flex-col flex-grow text-[#78787A]">
+                                <div class="w-full h-px block bg-roxo mb-6"></div>
+                                <span class="text-[27px]">fabricamos</span>
+                                <div class="text-[38px] leading-[0.8em] font-din_light text-[#58595B]">
+                                    <span class="font-din_bold text-[84px] leading-[0.8em]">XX</span> 
+                                    milhões de toneladas de açúcar, 
+                                </div>
                             </div>
                         </div>
-                        <div class="text-[#78787A]">
-                            <div class="w-full h-px block bg-roxo mb-4"></div>
-                            <span class="text-[30px]">produzimos</span>
+
+                        <div class="pr-10 pl-4 flex flex-row justify-between items-start">
+                            <img src="./svgs/ico-liderando-etanol.svg" class="w-12 mr-8 pt-14" alt="">
+                            <div class="flex flex-col flex-grow text-[#78787A]">
+                                <div class="w-full h-px block bg-laranja mb-6"></div>
+                                <span class="text-[27px]">produzimos</span>
+                                <div class="text-[38px] leading-[0.8em] font-din_light text-[#58595B] pr-20">
+                                    <span class="font-din_bold text-[84px] leading-[0.8em]">XX</span> 
+                                    blhoes de litros de etanol
+                                </div>
+                                <span class="text-[25px] pr-4 leading-[0.98em] mt-3">(a maior produção de etanol de cana-de-açúcar do mundo),</span>
+                            </div>
                         </div>
+
+                        <div class="pr-10 pl-4 flex flex-row justify-between items-start">
+                            <img src="./svgs/ico-eletricidade.svg" class="w-12 mr-8 pt-14" alt="">
+                            <div class="flex flex-col flex-grow text-[#78787A]">
+                                <div class="w-full h-px block bg-amarelo mb-6"></div>
+                                <span class="text-[27px]">e geramos</span>
+                                <div class="text-[38px] leading-[0.8em] font-din_light text-[#58595B] pr-20">
+                                    <span class="font-din_bold text-[84px] leading-[0.8em]">XX</span> <br> 
+                                    TWh de eletricidade
+                                </div>
+                                <span class="text-[25px] leading-[0.98em] mt-3">a partir do processo de cogeração da biomassa (o suficiente para abastecer a capital do Rio de Janeiro por um ano).</span>
+                            </div>
+                        </div>
+
+                        <div class="pr-10 ml-[82px]">
+                            <a href="#" class="group btnBox flex items-center justify-between p-8 border-[3px] bg-white hover:bg-roxo border-white drop-shadow-md transition-all duration-300">
+                                <span class="text-[22px] leading-tight text-[#303330] group-hover:text-white duration-300 transition-all">Clique aqui e veja o que já avançamos nessa trajetória.</span>
+                                <img src="./svgs/arrow.svg" class="w-6" alt="">
+                            </a>
+
+                            <br>
+
+                            <!-- botao border-y -->
+                            <a href="#" class="group borderYbtn">
+                                <img src="./svgs/ico-download.svg" class="w-[26px]">
+                                <span><strong>Baixe o relatório</strong> na íntegra</span>
+                                <div class="group-hover:h-full group-hover:rounded-md"></div>
+                            </a>
+                        </div>
+
                     </div>
                     
                 </div>
