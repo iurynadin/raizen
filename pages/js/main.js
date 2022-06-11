@@ -1,30 +1,29 @@
 (function ($) {
     $(".navbar-burger").on("click", function (event) {
         toggleMenu();
-        // console.log("menu");
+        console.log("menu");
         event.preventDefault();
     });
     function toggleMenu() {
         $(".navbar-burger").toggleClass("is-active");
-        $('.bgTopNav').toggleClass('is-active')
-        $('.topNavUl').toggleClass('is-active');
-        if (window.innerWidth <= 768) {
-            $('header').toggleClass('px-4');
-            $('.header__hambcont').toggleClass('mobile-active');
+        if (window.innerWidth <= 1213) {
+            console.log('teste')
+            $(".secondaryNav").toggleClass("is-active");
         }
     }
 
-    $("header ul.topNavUl li a").on(
+    $(".secondaryNav__menu li a").on(
         "click",
         function (event) {
             event.preventDefault();
-            // toggleMenu();
+            toggleMenu();
+            console.log('sai menu')
             var url = $(this).attr("href");
-            // setTimeout(function () {
-            //     $("html, body")
-            //         .stop()
-            //         .animate({ scrollTop: $(url).offset().top, }, 800, "easeInOutExpo" );
-            // }, 200);
+            setTimeout(function () {
+                $("html, body")
+                    .stop()
+                    .animate({ scrollTop: $(url).offset().top, }, 800, "easeInOutExpo" );
+            }, 200);
 
         }
     );
@@ -52,3 +51,22 @@
     );
     
 })(jQuery);
+
+function init() {
+    window.addEventListener("scroll", function (e) {
+        var distanceY =
+                window.pageYOffset ||
+                document.documentElement.scrollTop,
+            shrinkOn = 500,
+            hamb = document.querySelector("hamb");
+
+        if (distanceY > shrinkOn) {
+            $(".header").addClass("is-spying");
+            // $(".topNav").addClass("is-active");
+        } else {
+            $(".header").removeClass("is-spying");
+            // $(".topNav").removeClass("is-active");
+        }
+    });
+}
+window.onload = init();
