@@ -74,7 +74,7 @@ Bold
                 content: "sm";
             }
         }
-        @media (min-width: 768px) {
+        @media (min-width: 960px) {
             p::before {
                 content: "md";
             }
@@ -99,8 +99,28 @@ Bold
     h1 {
     }
 
-    section {
-        @apply relative w-full;
+    .sidebar{
+        &__menu{
+            @apply border border-green-500 m-0 p-0 flex flex-col justify-between items-center;
+
+            li{
+                @apply mb-4;
+            }
+        }
+
+        &__lang{
+            li{
+                @apply mx-4 font-din_bold text-xl text-cinza0/60;
+
+                a{
+                    @apply hover:text-cinza0/100 transition-all duration-300;
+                }
+            }
+        }
+    }
+
+    .contentsec{
+        
     }
 
     header {

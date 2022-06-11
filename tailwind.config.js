@@ -28,6 +28,9 @@ module.exports = {
                 din_medium: ["DIN-medium"],
                 din_bold: ["DIN-bold"],
             },
+            width: {
+                contentsec_lg: "calc(100% - 240px)"
+            },
             boxShadow: {
             },
             aspectRatio: {

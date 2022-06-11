@@ -5,13 +5,78 @@
         <wc-meta title="Raízen - Relatório Anula de Resposabilidade 2021/2022"></wc-meta>
         <link rel="stylesheet" type="text/css" href="css/style.css?v=0.9.60" />
     </head>
-    <body class="w-full">
+    <body class="w-full bg-slate-300">
         <!-- Sómente para identificar breakpoint. Remover em produção -->
         <div class="bpvisor"><p></p></div>
         <main>
-            <div class="container">
-                <h1>Raizen</h1>
+
+            <!-- Sidebar -->
+            <div class="sidebar lg:w-[240px] lg:h-screen fixed z-30 bg-white top-0 left-0 flex flex-col items-start justify-between hover:lg:w-[320px] transition-all duration-[200]">
+                
+                <div class="border border-red-400 pt-10 pl-[33px]">
+                    <img src="./svgs/logo.svg" class="w-[143px] mb-10" alt="Logo Raizen">
+                    <span class="text-base leading-snug text-[#78787A] inline-block">RELATÓRIO ANUAL DE SUSTENTABILIDADE<span class="font-din_bold block">2021/2022</span> </span>
+                </div>
+
+                <nav class="w-full border border-red-500 flex flex-col items-center">
+                    <ul class="sidebar__menu">
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-7 fill-cinza0" width="40.112" height="42.18" viewBox="0 0 40.112 42.18">
+                                    <path d="M17.323,25.869a11.278,11.278,0,0,0-7.3-2.808v6.017L2,21.056l8.022-8.022V19.05a15.306,15.306,0,0,1,9.286,3.189,15.984,15.984,0,0,0-1.986,3.63m16.767,3.209V23.062c-1,0-9.025.321-9.928,8.423a6.02,6.02,0,1,1-7.681,3.67,5.9,5.9,0,0,1,3.67-3.67A13.533,13.533,0,0,1,34.089,19.05V13.034l8.022,8.022-8.022,8.022M24.061,37.1a2.006,2.006,0,1,0-2.006,2.006A2.006,2.006,0,0,0,24.061,37.1M20.05,21.3a17.561,17.561,0,0,1,4.011-3.389V9.022h6.017L22.056,1,14.034,9.022H20.05Z" transform="translate(-2 -1)"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-7 fill-cinza0" width="40.112" height="42.18" viewBox="0 0 40.112 42.18"><path d="M17.323,25.869a11.278,11.278,0,0,0-7.3-2.808v6.017L2,21.056l8.022-8.022V19.05a15.306,15.306,0,0,1,9.286,3.189,15.984,15.984,0,0,0-1.986,3.63m16.767,3.209V23.062c-1,0-9.025.321-9.928,8.423a6.02,6.02,0,1,1-7.681,3.67,5.9,5.9,0,0,1,3.67-3.67A13.533,13.533,0,0,1,34.089,19.05V13.034l8.022,8.022-8.022,8.022M24.061,37.1a2.006,2.006,0,1,0-2.006,2.006A2.006,2.006,0,0,0,24.061,37.1M20.05,21.3a17.561,17.561,0,0,1,4.011-3.389V9.022h6.017L22.056,1,14.034,9.022H20.05Z" transform="translate(-2 -1)"/></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-7 fill-cinza0" width="40.112" height="42.18" viewBox="0 0 40.112 42.18"><path d="M17.323,25.869a11.278,11.278,0,0,0-7.3-2.808v6.017L2,21.056l8.022-8.022V19.05a15.306,15.306,0,0,1,9.286,3.189,15.984,15.984,0,0,0-1.986,3.63m16.767,3.209V23.062c-1,0-9.025.321-9.928,8.423a6.02,6.02,0,1,1-7.681,3.67,5.9,5.9,0,0,1,3.67-3.67A13.533,13.533,0,0,1,34.089,19.05V13.034l8.022,8.022-8.022,8.022M24.061,37.1a2.006,2.006,0,1,0-2.006,2.006A2.006,2.006,0,0,0,24.061,37.1M20.05,21.3a17.561,17.561,0,0,1,4.011-3.389V9.022h6.017L22.056,1,14.034,9.022H20.05Z" transform="translate(-2 -1)"/></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-7 fill-cinza0" width="40.112" height="42.18" viewBox="0 0 40.112 42.18"><path d="M17.323,25.869a11.278,11.278,0,0,0-7.3-2.808v6.017L2,21.056l8.022-8.022V19.05a15.306,15.306,0,0,1,9.286,3.189,15.984,15.984,0,0,0-1.986,3.63m16.767,3.209V23.062c-1,0-9.025.321-9.928,8.423a6.02,6.02,0,1,1-7.681,3.67,5.9,5.9,0,0,1,3.67-3.67A13.533,13.533,0,0,1,34.089,19.05V13.034l8.022,8.022-8.022,8.022M24.061,37.1a2.006,2.006,0,1,0-2.006,2.006A2.006,2.006,0,0,0,24.061,37.1M20.05,21.3a17.561,17.561,0,0,1,4.011-3.389V9.022h6.017L22.056,1,14.034,9.022H20.05Z" transform="translate(-2 -1)"/></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-7 fill-cinza0" width="40.112" height="42.18" viewBox="0 0 40.112 42.18"><path d="M17.323,25.869a11.278,11.278,0,0,0-7.3-2.808v6.017L2,21.056l8.022-8.022V19.05a15.306,15.306,0,0,1,9.286,3.189,15.984,15.984,0,0,0-1.986,3.63m16.767,3.209V23.062c-1,0-9.025.321-9.928,8.423a6.02,6.02,0,1,1-7.681,3.67,5.9,5.9,0,0,1,3.67-3.67A13.533,13.533,0,0,1,34.089,19.05V13.034l8.022,8.022-8.022,8.022M24.061,37.1a2.006,2.006,0,1,0-2.006,2.006A2.006,2.006,0,0,0,24.061,37.1M20.05,21.3a17.561,17.561,0,0,1,4.011-3.389V9.022h6.017L22.056,1,14.034,9.022H20.05Z" transform="translate(-2 -1)"/></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-7 fill-cinza0" width="40.112" height="42.18" viewBox="0 0 40.112 42.18"><path d="M17.323,25.869a11.278,11.278,0,0,0-7.3-2.808v6.017L2,21.056l8.022-8.022V19.05a15.306,15.306,0,0,1,9.286,3.189,15.984,15.984,0,0,0-1.986,3.63m16.767,3.209V23.062c-1,0-9.025.321-9.928,8.423a6.02,6.02,0,1,1-7.681,3.67,5.9,5.9,0,0,1,3.67-3.67A13.533,13.533,0,0,1,34.089,19.05V13.034l8.022,8.022-8.022,8.022M24.061,37.1a2.006,2.006,0,1,0-2.006,2.006A2.006,2.006,0,0,0,24.061,37.1M20.05,21.3a17.561,17.561,0,0,1,4.011-3.389V9.022h6.017L22.056,1,14.034,9.022H20.05Z" transform="translate(-2 -1)"/></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-7 fill-cinza0" width="40.112" height="42.18" viewBox="0 0 40.112 42.18"><path d="M17.323,25.869a11.278,11.278,0,0,0-7.3-2.808v6.017L2,21.056l8.022-8.022V19.05a15.306,15.306,0,0,1,9.286,3.189,15.984,15.984,0,0,0-1.986,3.63m16.767,3.209V23.062c-1,0-9.025.321-9.928,8.423a6.02,6.02,0,1,1-7.681,3.67,5.9,5.9,0,0,1,3.67-3.67A13.533,13.533,0,0,1,34.089,19.05V13.034l8.022,8.022-8.022,8.022M24.061,37.1a2.006,2.006,0,1,0-2.006,2.006A2.006,2.006,0,0,0,24.061,37.1M20.05,21.3a17.561,17.561,0,0,1,4.011-3.389V9.022h6.017L22.056,1,14.034,9.022H20.05Z" transform="translate(-2 -1)"/></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-7 fill-cinza0" width="40.112" height="42.18" viewBox="0 0 40.112 42.18"><path d="M17.323,25.869a11.278,11.278,0,0,0-7.3-2.808v6.017L2,21.056l8.022-8.022V19.05a15.306,15.306,0,0,1,9.286,3.189,15.984,15.984,0,0,0-1.986,3.63m16.767,3.209V23.062c-1,0-9.025.321-9.928,8.423a6.02,6.02,0,1,1-7.681,3.67,5.9,5.9,0,0,1,3.67-3.67A13.533,13.533,0,0,1,34.089,19.05V13.034l8.022,8.022-8.022,8.022M24.061,37.1a2.006,2.006,0,1,0-2.006,2.006A2.006,2.006,0,0,0,24.061,37.1M20.05,21.3a17.561,17.561,0,0,1,4.011-3.389V9.022h6.017L22.056,1,14.034,9.022H20.05Z" transform="translate(-2 -1)"/></svg>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <ul class="sidebar__lang flex justify-around items-center border border-blue-500 mb-10 pl-[33px]">
+                    <li><a href="#">PT</a></li>
+                    <li><a href="#">EN</a></li>
+                    <li><a href="#">ES</a></li>
+                </ul>
             </div>
+
+            <!-- Conteúdo -->
+            <section class="contentsec bg-slate-300 lg:ml-[240px] lg:w-contentsec_lg">
+                <h1>Raizen</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, nemo eligendi? Necessitatibus laborum doloribus fuga veniam optio. Consectetur quae unde et molestias esse iste ipsum molestiae repudiandae sequi animi! Ratione vel officiis impedit rem consequatur tempora? Exercitationem ipsum asperiores tempora? Quia ex tempore sit necessitatibus ad vitae quas eius itaque asperiores, eligendi nostrum dolores optio, libero aut mollitia rem labore sint tempora quam? Officiis debitis fugit ullam sapiente! Nostrum fugiat iste doloribus, dicta maiores, id ut voluptas animi debitis cupiditate qui aperiam, at minus! Est consequatur tenetur non, maxime, officiis vel qui laudantium dolores eaque quis porro, minima aut cumque.</p>
+            </section>
         </main>
         
     </body>
