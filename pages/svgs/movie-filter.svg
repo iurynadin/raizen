@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1594" height="1080" viewBox="0 0 1594 1080">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.046" y1="0.034" x2="0.849" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#781e77"/>
+      <stop offset="1" stop-color="#f57920" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1" data-name="Rectangle 1" width="1594" height="1080" transform="translate(326)" fill="#fff"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="Path_4207" data-name="Path 4207" d="M0,0H1920V1080H0Z" transform="translate(2840 1080) rotate(180)" fill="url(#linear-gradient)"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-2" x1="-0.557" y1="1.08" x2="0.366" y2="0.018" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#eb368e"/>
+      <stop offset="0.82" stop-color="#fa9e2b" stop-opacity="0.788"/>
+      <stop offset="1" stop-color="#fdb515"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" x1="-0.029" y1="1.242" x2="0.677" y2="0.805" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#781e77"/>
+      <stop offset="1" stop-color="#781f78" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="Mask_Group_41" data-name="Mask Group 41" transform="translate(-326)" clip-path="url(#clip-path)">
+    <g id="movie-filter">
+      <g id="Mask_Group_40" data-name="Mask Group 40" transform="translate(-780)" clip-path="url(#clip-path-2)">
+        <path id="Polygon_8" data-name="Polygon 8" d="M886.5,0,1182,514.5,886.5,1029h-591L0,514.5,295.5,0Z" transform="translate(2287 -442)" fill="url(#linear-gradient-2)"/>
+        <path id="Polygon_9" data-name="Polygon 9" d="M1497,0l499,868.5L1497,1737H499L0,868.5,499,0Z" transform="translate(2143 -774)" opacity="0.23" fill="url(#linear-gradient-2)"/>
+        <g id="Polygon_10" data-name="Polygon 10" transform="translate(1880 -878)" fill="none" opacity="0.23">
+          <path d="M1675.5,0,2234,972.5,1675.5,1945H558.5L0,972.5,558.5,0Z" stroke="none"/>
+          <path d="M 560.236572265625 3.0001220703125 L 3.45947265625 972.5000610351562 L 560.236572265625 1942 L 1673.763427734375 1942 L 2230.54052734375 972.5000610351562 L 1673.763427734375 3.0001220703125 L 560.236572265625 3.0001220703125 M 558.5 0.0001220703125 L 1675.5 0.0001220703125 L 2234 972.5000610351562 L 1675.5 1945 L 558.5 1945 L 0 972.5000610351562 L 558.5 0.0001220703125 Z" stroke="none" fill="#fdb515"/>
+        </g>
+      </g>
+      <path id="Path_4206" data-name="Path 4206" d="M0,0H1760V1080H0Z" transform="translate(1920 1080) rotate(180)" fill="url(#linear-gradient)"/>
+      <path id="Path_4208" data-name="Path 4208" d="M0,1080H1552.646V0H0Z" transform="translate(325.354 2.18)" fill="url(#linear-gradient-5)"/>
+    </g>
+  </g>
+</svg>

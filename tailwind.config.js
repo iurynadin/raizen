@@ -43,6 +43,8 @@ module.exports = {
             aspectRatio: {
             },
             backgroundImage: {
+                herovideo: "url('../video/herovideo.jpg')",
+                moviefilter: "url('../svgs/movie-filter.svg')",
             },
             boxShadow: {
             },
