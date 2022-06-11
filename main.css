@@ -177,6 +177,19 @@ Bold
         } */
     }
 
+    .footer {
+        clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 20%, 80% 0%);
+    }
+    .footer-sm {
+        clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 30%, 80% 0%);    
+    }
+    .footer-lg {
+        clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 70%, 70% 0%);    
+    }
+    .footer-xl {
+        clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 60%, 80% 0%);
+    }
+
     .full-width {
         width: 100vw;
         position: relative;
