@@ -1160,15 +1160,15 @@ header {
   font-size: 1.5rem;
   line-height: 2rem;
 }
+.text-\[30px\] {
+  font-size: 30px;
+}
 .text-\[21px\] {
   font-size: 21px;
 }
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
-}
-.text-\[30px\] {
-  font-size: 30px;
 }
 .uppercase {
   text-transform: uppercase;
