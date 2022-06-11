@@ -74,12 +74,12 @@ Bold
                 content: "sm";
             }
         }
-        @media (min-width: 960px) {
+        @media (min-width: 768px) {
             p::before {
                 content: "md";
             }
         }
-        @media (min-width: 1024px) {
+        @media (min-width: 960px) {
             p::before {
                 content: "lg";
             }
@@ -97,14 +97,59 @@ Bold
     }
 
     h1 {
-    }
+    }   
 
     .sidebar{
         &__menu{
-            @apply border border-green-500 m-0 p-0 flex flex-col justify-between items-center;
+            @apply relative m-0 p-0 flex flex-col justify-between items-start w-full;
 
             li{
-                @apply mb-4;
+                @apply relative mb-4 text-[#78787A] transition-all duration-300 ;
+
+                a{
+                    @apply relative flex flex-row justify-start items-start opacity-60 transition-all duration-300 pl-24;
+
+                    .itemmark {
+                        @apply absolute left-0 top-0 w-3 h-10 opacity-0 transition-all duration-300;
+                    }
+                    
+                    svg{
+                        @apply mr-4;
+                    }
+
+                    span{
+                        @apply block text-sm font-din leading-snug;
+    
+                        strong{
+                            @apply font-din_bold;
+                        }
+                    }
+
+                    .labelitem{
+                        @apply absolute w-[200px] left-20 top-0 opacity-0 block text-left transition-all duration-300 uppercase;
+                    }
+                }
+
+            }
+        }
+
+        &__menu.is-hovered{
+            li{
+                @apply w-full ;
+
+                a{
+                    @apply opacity-100 pl-[33px];
+
+                    .labelitem{
+                        @apply opacity-40;
+                    }
+                    
+                    &:hover{
+                        .labelitem{
+                            @apply opacity-100;
+                        }
+                    }
+                }
             }
         }
 
@@ -114,13 +159,15 @@ Bold
 
                 a{
                     @apply hover:text-cinza0/100 transition-all duration-300;
+
+                    
                 }
             }
         }
     }
 
     .contentsec{
-        
+        @apply relative lg:w-contentsec_lg lg:ml-[240px];
     }
 
     header {
