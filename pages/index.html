@@ -356,15 +356,17 @@
 
             <!-- Saiba Mais -->
             <section class="contentsec bg-white xl:ml-[240px] xl:w-contentsec_xl">
-                <div class="relative h-screen w-full overflow-hidden bg-gradient-to-t from-[#421142] to-[#781F78]">
-                    <img class="hidden md:block z-[1] absolute top-0 left-[40px] h-full w-full object-right object-cover" src="./imgs/bg-saibamais.png" alt="">
+                <div class="relative h-screen w-full overflow-hidden">
+                    <div class="absolute z-[3] top-0 left-0 h-full w-[10px] md:w-[40px] bg-gradient-to-t from-[#421142] to-[#781F78]"></div>
+                    <img class="hidden md:block z-[1] absolute top-0 left-[40px] overflow-hidden w-full h-full object-right object-cover" src="./imgs/bg-saibamais.png" alt="">
                     <img class="md:hidden z-[1] absolute top-0 left-[10px] h-full w-full object-right object-cover" src="./imgs/bg-saibamais-mobile.png" alt="">
+                    
                     <div class="container z-[2] h-full">
                         <div class="grid grid-cols-1 lg:grid-cols-2 place-content-end lg:place-content-center content-end h-full">
                             <div class="">
                                
                             </div>
-                            <div class="mx-2 sm:mx-10 lg:mx-0 lg:pr-10">
+                            <div class="mx-2 -mt-52 sm:mx-10 lg:mx-0 lg:pr-10">
                                 <img src="./svgs/ico-saibamais.svg" class="my-8 w-10" alt="">
                                 <div class="w-full h-px block bg-white"></div>
                                 <div class="bigNumber">07</div>
@@ -375,16 +377,17 @@
                             
                         </div>
                     </div>
-                    <div class="hidden md:block saibamais z-[2] absolute bottom-0 left-[40px] w-[70%] bg-[#421142]">
+                    <!-- <div class="hidden md:block saibamais z-[2] absolute bottom-0 left-[40px] w-[70%] bg-[#421142]"></div> -->
+                    <!-- <div class="xl:container">
                         <p class="mt-16 pl-32 pr-64 font-din_light text-white text-[41px] leading-tight">
                             Comprometidos com a transparência, divulgamos o nosso 11º Relatório Anual de Sustentabilidade,
                         </p>
-                    </div>
+                    </div> -->
                 </div>
-                <div class="hidden md:block saibamais-b border-l-[40px] pl-[14rem] pr-[24rem] pt-16 pb-20 border-[#421142] w-[75%] bg-[#421142] font-din_light text-white leading-tight">
+                <!-- <div class="hidden md:block saibamais-b border-l-[40px] pl-[14rem] pr-[24rem] pt-16 pb-20 border-[#421142] w-[75%] bg-[#421142] font-din_light text-white leading-tight">
                     <p class="text-[24px] border border-black ">elaborado em conformidade com as Normas da Global Reporting Initiative (GRI) – opção Essencial – e o Sustainability Accounting Standards Board (SASB).</p>
                     <p class="mt-16 text-[24px]">Também passamos a considerar, pela primeira vez, as recomendações da Task Force on Climate-related Financial Disclosures (TCFD), criada pelo Financial Stability Board (FSB); e as Métricas do Capitalismo Stakeholder, do World Economic Forum (WEF).</p>
-                </div>
+                </div> -->
                 <!-- <div class="relative z-[2]">
                     <div class="absolute py-20 px-52 w-[80%] top-0 lg:-top-56 bg-[#421142] font-din_light text-white leading-tight">
                         <div class="ml-20">
@@ -396,10 +399,42 @@
                         </div>
                     </div>
                 </div> -->
-                <div class="bg-white">
-                    <div class="container mt-64">
-                        <span class="font-din_bold text-[47px] text-roxo">ACESSE <span class="font-din_light">TAMBEM</span></span>
+                <div class="relative bg-[#421142] lg:pb-0 lg:bg-white border border-black">
+                    <img class="hidden lg:block z-[1] absolute -top-[300px] right-[20%] xl:right-[40%] h-[700px] object-cover object-right" src="./svgs/bg-hex-saibamais.svg" alt=""> 
+                         
+                    <div class="absolute top-0 lg:-top-[250px] left-0 container z-[3] font-din_light text-white leading-tight">
+                        <div class="grid grid-cols-1 xl:grid-cols-3 border border-black">
+                            
+                        <div class="xl:col-span-2">
+                            <p class="mt-5 pl-0 xl:pl-20 2xl:pl-32 lg:pr-96 xl:pr-64 font-din_light text-white text-[28px] lg:text-[32px] 2xl:text-[41px] leading-tight">
+                                Comprometidos com a transparência, divulgamos o nosso 11º Relatório Anual de Sustentabilidade,
+                            </p>
+                            
+                            <p class="mt-5 lg:mt-20 2xl:mt-16 pl-0 xl:pl-20 2xl:pl-32 lg:pr-96 xl:pr-64 text-[17px] xl:text-[18px] 2xl:text-[24px]">elaborado em conformidade com as Normas da Global Reporting Initiative (GRI) – opção Essencial – e o Sustainability Accounting Standards Board (SASB).</p>
+                            <p class="mt-5 pb-10 lg:pb-0 lg:mt-20 2xl:mt-16 pl-0 xl:pl-20 2xl:pl-32 lg:pr-96 xl:pr-64 text-[17px] xl:text-[18px] 2xl:text-[24px]">Também passamos a considerar, pela primeira vez, as recomendações da Task Force on Climate-related Financial Disclosures (TCFD), criada pelo Financial Stability Board (FSB); e as Métricas do Capitalismo Stakeholder, do World Economic Forum (WEF).</p>
+                        </div>
                     </div>
+                    <div class="hidden absolute z-[2] pl-10 pr-10 hover:pl-12 hover:pr-8 py-5 -bottom-[40%] lg:bottom-[20%] xl:bottom-[37%] 2xl:bottom-[45%] lg:right-0 xl:right-[5%] 2xl:right-[10%] w-[350px] xl:w-[520px] border-0 border-transparent hover:border-4 hover:border-white bg-roxo hover:bg-laranja transition-all duration-300 font-din leading-none lg:flex flex-row justify-center items-center space-x-10">
+                        <img class="h-[56px] w-[56px]" src="./svgs/ico-download-branco.svg" alt="">
+                        <div class="flex-grow text-center text-white text-[26px] xl:text-[29px]">Clique aqui e confira a <span class="font-din_bold">publicação completa!</span></div>
+                        <img class="h-[25px] w-[25px]" src="./svgs/arrow-branca.svg" alt="">
+                    </div>
+                    
+                    <div class="lg:hidden -mb-5 z-[2] pl-7 pr-7  py-5  w-[280px] border-0 border-transparent   bg-roxo font-din leading-none flex flex-row justify-center items-center mx-auto space-x-10">
+                        <img class="h-[56px] w-[56px]" src="./svgs/ico-download-branco.svg" alt="">
+                        <div class="flex-grow text-center text-white text-[18px]">Clique aqui e confira a <span class="font-din_bold">publicação completa!</span></div>
+                        <img class="h-[25px] w-[25px]" src="./svgs/arrow-branca.svg" alt="">
+                    </div>
+                    
+                </div>
+                
+                <div class="relative bg-white ">
+                    <div class="container">
+                        <div class="grid grid-cols-1 lg:grid-cols-3 w-[90%] mx-auto xl:-mt-24 2xl:-mt-32">
+                            <span class="col-span-3 font-din_bold text-[47px] text-roxo">ACESSE <span class="font-din_light">TAMBÉM</span></span>
+                        </div>
+                    </div>
+                    
                 </div>
                 
             </section>

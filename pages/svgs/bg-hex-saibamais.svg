@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 3840 672" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="Repeat_Grid_1" transform="matrix(1,0,0,1,1054.02,0)">
+        <g transform="matrix(1,0,0,1,680.957,0)">
+            <path id="Path_4200" d="M578.25,0L771,336L578.25,672L-768.207,672L-960.957,336L-768.207,0L578.25,0Z" style="fill:rgb(66,17,66);fill-rule:nonzero;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,-299.043,0)">
+            <path id="Path_42001" serif:id="Path_4200" d="M578.25,0L771,336L578.25,672L-768.207,672L-960.957,336L-768.207,0L578.25,0Z" style="fill:rgb(66,17,66);fill-rule:nonzero;"/>
+        </g>
+        <g transform="matrix(1,0,0,1,2011.96,0)">
+            <path id="Path_42002" serif:id="Path_4200" d="M578.25,0L771,336L578.25,672L-768.207,672L-960.957,336L-768.207,0L578.25,0Z" style="fill:rgb(66,17,66);fill-rule:nonzero;"/>
+        </g>
+    </g>
+</svg>
