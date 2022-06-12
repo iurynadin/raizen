@@ -53,6 +53,7 @@ module.exports = {
                 moviefilter: "url('../svgs/movie-filter.svg')",
                 destaquesafra: "url('../imgs/bg-destaquesafra.jpg')",
                 hexagcontent: "url('../svgs/hexag-safracontent.svg')",
+                mensagem: "url('../imgs/bg-mensagem.jpg')",
             },
             boxShadow: {
             },

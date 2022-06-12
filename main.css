@@ -230,7 +230,7 @@ Bold
         }
 
         h1{
-            @apply text-white font-din_light uppercase xl:text-[54px] 2xl:text-[68px] leading-[0.98em];
+            @apply text-white font-din_light uppercase text-[44px] xl:text-[54px] 2xl:text-[68px] leading-[0.98em];
         }
 
         h4{
