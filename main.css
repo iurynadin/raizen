@@ -234,7 +234,7 @@ Bold
         }
 
         h4{
-            @apply font-din_bold uppercase text-[26px];
+            @apply font-din_bold uppercase xl:text-[22px] 2xl:text-[26px] leading-tight;
         }
 
         .bigNumber{
@@ -258,6 +258,14 @@ Bold
 
         span + div{
             @apply absolute top-0 left-0 z-0 w-full h-[3px] bg-gradient-to-r from-[#F57920] to-[#781E77] opacity-[0.15] block transition-all duration-300;
+        }
+    }
+
+    .btnBox{
+        @apply flex items-center justify-between p-8 border-[3px] bg-white hover:bg-roxo border-white drop-shadow-md transition-all duration-300;
+
+        span{
+            @apply leading-tight text-[#303330]  duration-300 transition-all;
         }
     }
 
