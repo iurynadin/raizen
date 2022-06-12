@@ -40,13 +40,19 @@ module.exports = {
                 secondary_xs: "calc(100% - 8px)",
                 secondary_md: "calc(100% - 20px)",
             },
+            height: {
+                hexagdestaque: "calc(100vh + 60px)",
+            },
             boxShadow: {
             },
             aspectRatio: {
+                ratiodestaque: "163 / 115",
             },
             backgroundImage: {
                 herovideo: "url('../video/herovideo.jpg')",
                 moviefilter: "url('../svgs/movie-filter.svg')",
+                destaquesafra: "url('../imgs/bg-destaquesafra.jpg')",
+                hexagcontent: "url('../svgs/hexag-safracontent.svg')",
             },
             boxShadow: {
             },

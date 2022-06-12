@@ -226,9 +226,7 @@ Bold
         @apply relative w-full xl:w-contentsec_xl xl:ml-[240px];
 
         .container{
-            @apply relative border border-red-600
-                lg:px-8
-            ;
+            @apply relative lg:px-8;
         }
 
         h1{
@@ -252,7 +250,7 @@ Bold
 
     /* botoes */
     .borderYbtn{
-        @apply relative flex justify-between items-center border-t border-b py-7 px-2 hover:px-5 border-roxo hover:border-white transition-all duration-300;
+        @apply relative flex justify-between items-center border-t border-b py-7 px-2 hover:px-5 border-roxo hover:border-transparent transition-all duration-300;
 
         span{
             @apply uppercase text-roxo text-[22px];

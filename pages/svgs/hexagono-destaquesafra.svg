@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1160" height="1159.985" viewBox="0 0 1160 1159.985">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.152" y1="0.844" x2="0.992" y2="0.256" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#781f78"/>
+      <stop offset="0.748" stop-color="#209dc6" stop-opacity="0.89"/>
+      <stop offset="1" stop-color="#05c3de" stop-opacity="0.149"/>
+    </linearGradient>
+  </defs>
+  <path id="ico-safra" d="M820.24,0,1160,339.76V820.24L820.24,1159.985H339.759L0,820.24V339.76L339.759,0Z" transform="translate(0)" fill="url(#linear-gradient)"/>
+</svg>
