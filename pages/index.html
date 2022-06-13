@@ -4,6 +4,7 @@
         <meta charset="utf-8" />
         <wc-meta title="Raízen - Relatório Anula de Resposabilidade 2021/2022"></wc-meta>
         <link rel="stylesheet" type="text/css" href="css/style.css?v=0.9.60" />
+        <link rel="stylesheet" src="https://cdn.jsdelivr.net/gh/cotton123236/zoomist@latest/dist/zoomist.min.css"/>
     </head>
     <body class="w-full">
         <div class="bpvisor"><p></p></div>
@@ -242,7 +243,7 @@
                     </div>
 
                     <div class="grid lg:grid-cols-2 gap-20 mt-6">
-                        <div class="border border-black flex pr-10">
+                        <div class="flex pr-10">
                             <img src="./svgs/cana-acucar.svg" class="xl:w-[76px] mr-6 mt-3" alt="">
                             <div class="pt-20 pl-4">
                                 <span class="font-din_bold text-roxo text-[48px] leading-[0.98em]">
@@ -260,7 +261,7 @@
 
                     
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 mt-14">
-                        <div class="col-span-1 lg:col-span-2 border pl-24">
+                        <div class="col-span-1 lg:col-span-2 pl-24">
                             <h4 class="text-roxo">No mesmo periodo,</h4>
                         </div>
 
@@ -439,8 +440,6 @@
                 </div>
             </section>
 
-
-
             <section class="contentsec bg-white h-screen bg-mensagem bg-[position:right_center] bg-cover bg-no-repeat mt-20" id="mensagem">
                 <div class="container h-full">
                     <div class="grid lg:grid-cols-12 h-full">
@@ -519,7 +518,10 @@
             <div class="contentsec mt-20">
                 <div class="container flex justify-between gap-8">
                     <div class="w-7/12">
-                        <div class="bg-cyan border-b-4 border-amarelo w-full h-[370px] block"></div>
+                        <div class="border-b-4 border-amarelo w-full h-[370px] block">
+                            <!-- panoramic viewer -->
+                            <div id="my-zoomist" class="w-full h-full border border-green-500" data-zoomist-src="./imgs/mapa-lg.png"></div>
+                        </div>
                     </div>
                     <div class="w-5/12">
                         <div class="text-amarelo font-din_bold xl:text-[100px] mb-0 leading-[0.88em] block ">35</div> 
@@ -791,6 +793,7 @@
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cotton123236/zoomist@latest/dist/zoomist.min.js"></script>
 
     <script src="./js/main.js" type="text/javascript"></script>
 </html>

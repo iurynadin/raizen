@@ -247,7 +247,6 @@ Bold
 
     }
 
-
     /* botoes */
     .borderYbtn{
         @apply relative flex justify-between items-center border-t border-b py-7 px-2 hover:px-5 border-roxo hover:border-transparent transition-all duration-300;
