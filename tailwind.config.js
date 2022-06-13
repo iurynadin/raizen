@@ -56,6 +56,7 @@ module.exports = {
                 mensagem: "url('../imgs/bg-mensagem.jpg')",
                 modelounico: "url('../imgs/bg-modelounico.jpg')",
                 tarjacontrole: "url('../imgs/bg-tarjacontrole.jpg')",
+                proposta: "url('../svgs/bg-proposta.svg')",
             },
             boxShadow: {
             },
