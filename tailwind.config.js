@@ -50,16 +50,21 @@ module.exports = {
             },
             aspectRatio: {
                 ratiodestaque: "163 / 115",
+                mapa: "160 / 93",
             },
             backgroundImage: {
+                heromobile: "url('../imgs/bg-hero-mobile.jpg')",
                 herovideo: "url('../video/herovideo.jpg')",
                 moviefilter: "url('../svgs/movie-filter.svg')",
                 destaquesafra: "url('../imgs/bg-destaquesafra.jpg')",
                 hexagcontent: "url('../svgs/hexag-safracontent.svg')",
                 mensagem: "url('../imgs/bg-mensagem.jpg')",
+                maparoxo: "url('../imgs/mapa-roxo.jpg')",
                 modelounico: "url('../imgs/bg-modelounico.jpg')",
+                modelounicomobile: "url('../imgs/bg-munico-mobile.jpg')",
                 tarjacontrole: "url('../imgs/bg-tarjacontrole.jpg')",
                 proposta: "url('../svgs/bg-proposta.svg')",
+                hexagono1: "url('../svgs/hexagono-01-mobile.svg')",
             },
             boxShadow: {
             },
