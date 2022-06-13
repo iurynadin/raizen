@@ -1325,6 +1325,9 @@ strong {
 .-mt-6 {
   margin-top: -1.5rem;
 }
+.mt-52 {
+  margin-top: 13rem;
+}
 .mt-56 {
   margin-top: 14rem;
 }
@@ -1517,6 +1520,9 @@ strong {
 .w-\[80\%\] {
   width: 80%;
 }
+.w-\[60\%\] {
+  width: 60%;
+}
 .w-\[20px\] {
   width: 20px;
 }
@@ -1656,6 +1662,9 @@ strong {
   --tw-space-x-reverse: 0;
   margin-right: calc(2.5rem * var(--tw-space-x-reverse));
   margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+.place-self-start {
+  place-self: start;
 }
 .place-self-center {
   place-self: center;
@@ -1893,8 +1902,8 @@ strong {
 .bg-center {
   background-position: center;
 }
-.bg-\[position\:50\%_0\%\] {
-  background-position: 50% 0%;
+.bg-\[position\:106\%_0\%\] {
+  background-position: 106% 0%;
 }
 .bg-\[position\:right_center\] {
   background-position: right center;
@@ -1907,9 +1916,6 @@ strong {
 }
 .bg-right-bottom {
   background-position: right bottom;
-}
-.bg-\[position\:106\%_0\%\] {
-  background-position: 106% 0%;
 }
 .bg-no-repeat {
   background-repeat: no-repeat;
@@ -2002,8 +2008,8 @@ strong {
 .pr-8 {
   padding-right: 2rem;
 }
-.pb-28 {
-  padding-bottom: 7rem;
+.pr-7 {
+  padding-right: 1.75rem;
 }
 .pt-24 {
   padding-top: 6rem;
@@ -2029,6 +2035,9 @@ strong {
 .pr-6 {
   padding-right: 1.5rem;
 }
+.pb-28 {
+  padding-bottom: 7rem;
+}
 .pl-5 {
   padding-left: 1.25rem;
 }
@@ -2046,12 +2055,6 @@ strong {
 }
 .pl-7 {
   padding-left: 1.75rem;
-}
-.pr-7 {
-  padding-right: 1.75rem;
-}
-.pb-20 {
-  padding-bottom: 5rem;
 }
 .text-center {
   text-align: center;
@@ -2218,6 +2221,10 @@ strong {
 .text-\[\#3F104C\] {
   --tw-text-opacity: 1;
   color: rgb(63 16 76 / var(--tw-text-opacity));
+}
+.text-\[\#781F78\] {
+  --tw-text-opacity: 1;
+  color: rgb(120 31 120 / var(--tw-text-opacity));
 }
 .opacity-50 {
   opacity: 0.5;
@@ -2410,12 +2417,6 @@ Bold
     .sm\:w-\[540px\] {
     width: 540px;
   }
-    .sm\:bg-\[position\:120\%_0\%\] {
-    background-position: 120% 0%;
-  }
-    .sm\:bg-\[position\:500\%_0\%\] {
-    background-position: 500% 0%;
-  }
     .sm\:pr-20 {
     padding-right: 5rem;
   }
@@ -2457,10 +2458,6 @@ Bold
 
   .md\:-mt-\[80px\] {
     margin-top: -80px;
-  }
-
-  .md\:mb-0 {
-    margin-bottom: 0px;
   }
 
   .md\:block {
@@ -2625,6 +2622,14 @@ Bold
     padding-right: 5rem;
   }
 
+  .md\:pb-28 {
+    padding-bottom: 7rem;
+  }
+
+  .md\:pr-0 {
+    padding-right: 0px;
+  }
+
   .md\:pl-4 {
     padding-left: 1rem;
   }
@@ -2651,18 +2656,6 @@ Bold
 
   .md\:pt-20 {
     padding-top: 5rem;
-  }
-
-  .md\:pb-0 {
-    padding-bottom: 0px;
-  }
-
-  .md\:pb-28 {
-    padding-bottom: 7rem;
-  }
-
-  .md\:pr-0 {
-    padding-right: 0px;
   }
 
   .md\:text-\[29px\] {
@@ -3094,6 +3087,9 @@ Bold
   }
     .xl\:text-\[34px\] {
     font-size: 34px;
+  }
+    .xl\:text-\[28px\] {
+    font-size: 28px;
   }
     .xl\:text-\[18px\] {
     font-size: 18px;
