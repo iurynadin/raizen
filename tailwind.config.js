@@ -43,6 +43,9 @@ module.exports = {
             height: {
                 hexagdestaque: "calc(100vh + 60px)",
             },
+            translate: {
+                secondaryout: "calc((100vh + 500px) * -1)",
+            },
             boxShadow: {
             },
             aspectRatio: {
@@ -56,6 +59,7 @@ module.exports = {
                 mensagem: "url('../imgs/bg-mensagem.jpg')",
                 modelounico: "url('../imgs/bg-modelounico.jpg')",
                 tarjacontrole: "url('../imgs/bg-tarjacontrole.jpg')",
+                proposta: "url('../svgs/bg-proposta.svg')",
             },
             boxShadow: {
             },

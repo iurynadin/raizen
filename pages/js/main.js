@@ -49,16 +49,6 @@
             $('.sidebar__menu').toggleClass('is-hovered')
         }
     );
-
-    const myZoomist = document.querySelector('#my-zoomist')
-    new Zoomist(myZoomist, {
-        pinchable: false,
-        on: {
-            ready() {
-            console.log('Zoomist ready!')
-            }
-        }
-    })
     
     
 })(jQuery);

@@ -202,7 +202,7 @@ Bold
     }
 
     .secondaryNav{
-        @apply -translate-y-full fixed top-0 h-screen right-0 w-secondary_xs md:w-secondary_md bg-white flex flex-col z-10 pt-[82px] px-6 duration-300 transition-all;
+        @apply translate-y-secondaryout fixed top-0 h-screen right-0 w-secondary_xs md:w-secondary_md bg-white flex flex-col z-10 pt-[82px] px-6 duration-500 transition-all;
 
         &__menu {
             li{
@@ -230,15 +230,15 @@ Bold
         }
 
         h1{
-            @apply text-white font-din_light uppercase text-[44px] xl:text-[54px] 2xl:text-[68px] leading-[0.98em];
+            @apply text-white font-din_light uppercase text-[32px] xl:text-[54px] 2xl:text-[68px] leading-[0.98em];
         }
 
         h4{
-            @apply font-din_bold uppercase xl:text-[22px] 2xl:text-[26px] leading-tight;
+            @apply font-din_bold uppercase text-xl xl:text-[22px] 2xl:text-[26px] leading-tight;
         }
 
         .bigNumber{
-            @apply uppercase text-white font-din_light lg:text-[140px] 2xl:text-[200px] leading-tight;
+            @apply uppercase text-white font-din_light lg:text-[94px] xl:text-[140px] 2xl:text-[200px] leading-tight;
         }
 
         p{
@@ -247,12 +247,22 @@ Bold
 
     }
 
+    .iconChapter{
+        @apply mt-7 mb-4 xl:my-8 lg:w-5 xl:w-10;
+    }
+
+    .borderChapter{
+        @apply absolute block xl:hidden z-[5] top-0 left-0 w-5 h-screen bg-gradient-to-b ;
+    }
+
     /* botoes */
     .borderYbtn{
         @apply relative flex justify-between items-center border-t border-b py-7 px-2 hover:px-5 border-roxo hover:border-transparent transition-all duration-300;
 
         span{
-            @apply uppercase text-roxo text-[22px] leading-tight;
+            @apply uppercase text-roxo 
+            text-[32px]
+            xl:text-[22px] leading-tight;
         }
 
         span + div{
