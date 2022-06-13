@@ -204,32 +204,38 @@
 
 
             <!-- Hero -->
-            <section class="contentsec relative h-screen bg-roxo flex flex-col items-end justify-center xl:pr-[120px]">
+            <section class="contentsec relative h-screen md:h-[500px] lg:h-screen bg-roxo bg-heromobile bg-center bg-cover bg-no-repeat md:bg-none flex flex-col items-end justify-center pr-10 sm:pr-20 xl:pr-20">
 
-                <h1 class="text-white uppercase text-right font-din_ultralight lg:text-[56px] leading-tight relative z-[5]">redefinindo o <br> <span class="font-din_bold">futuro da energia</span></h1>
+                <h1 class="text-white uppercase text-right font-din_ultralight relative z-[5]">
+                    <span class="text-[44px] lg:text-[61px] xl:text-[70px] 2xl:text-[84px] leading-[0.99em]">
+                        redefinindo o <br> <span class="font-din_bold">futuro da energia</span>
+                    </span>
+                </h1>
 
                 <div class="group w-full absolute bottom-0 left-0 z-[5] flex flex-col justify-start items-center pb-2">
-                    <img src="./svgs/ico-scroll.svg" class="hidden lg:block w-6 2xl:w-10 opacity-50 group-hover:opacity-100 group-hover:-translate-y-2 transition-all duration-300" alt="Scroll">
+                    <img src="./svgs/ico-scroll.svg" class="hidden md:block w-6 2xl:w-10 opacity-50 group-hover:opacity-100 group-hover:-translate-y-2 transition-all duration-300" alt="Scroll">
 
                     <img src="./svgs/scroll-arrows.svg" class="w-3 2xl:w-[17px] opacity-0 group-hover:opacity-100 transition-all duration-300">
                 </div>
 
                 <!-- filter video -->
-                <div class="absolute top-0 left-0 w-full h-full bg-moviefilter bg-center bg-cover bg-no-repeat z-[3]"></div>
+                <div class="hidden md:block absolute top-0 left-0 w-full h-full bg-moviefilter bg-center bg-cover bg-no-repeat z-[3]"></div>
 
                 <!-- simulação vídeo -->
-                <div class="video absolute top-0 left-0 w-full h-full bg-herovideo bg-center bg-cover bg-no-repeat"></div>
+                <div class="hidden md:block video absolute top-0 left-0 w-full h-full bg-herovideo bg-center bg-cover bg-no-repeat"></div>
             </section>
 
 
             <!-- Liderando a transição energética -->
-            <section class="contentsec bg-white" id="liderando">
-                <img src="./svgs/hexagono-01.svg" class="absolute left-[50%] -translate-x-1/2 -top-[290px] z-[1] 
+            <section class="contentsec bg-white bg-hexagono1 bg-no-repeat bg-[length:780px_auto] bg-[position:106%_0%] md:bg-none overflow-hidden md:overflow-visible" id="liderando">
+                <img src="./svgs/hexagono-01.svg" class="absolute left-[50%] -translate-x-1/2 z-[1] 
+                hidden md:block
+                md:-top-[150px] md:w-[530px] md:-ml-[300px]
                 lg:-top-[290px] lg:w-[700px] lg:-ml-[390px]
                 xl:-top-[300px] xl:w-[900px] xl:-ml-[500px]
                 " alt="">
                 <div class="container z-[2]">
-                    <div class="grid lg:grid-cols-2 gap-20">
+                    <div class="grid md:grid-cols-2 gap-4 md:gap-10 lg:gap-20">
                         <div class="pr-10">
                             <img src="./svgs/ico-liderando.svg" class="iconChapter" alt="">
                             <div class="w-full h-px block bg-roxo"></div>
@@ -245,7 +251,7 @@
                         </div>
                     </div>
 
-                    <div class="grid lg:grid-cols-2 gap-20 mt-6">
+                    <div class="grid md:grid-cols-2 gap-10 lg:gap-20 mt-6">
                         <div class="flex pr-10">
                             <img src="./svgs/cana-acucar.svg" class="w-[52px] xl:w-[76px] mr-6 mt-3" alt="">
                             <div class="pt-20 pl-4">
@@ -262,18 +268,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="absolute block xl:hidden z-[5] top-0 left-0 w-5 bg-roxo h-[580px]"></div>
+                <div class="absolute block xl:hidden z-[5] top-0 left-0 w-2 lg:w-5 bg-roxo h-[570px] sm:h-[580px]"></div>
             </section>
 
             <section class="contentsec bg-white">
                 <div class="container z-[2]"></div>  
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 xl:gap-20 mt-14">
-                        <div class="col-span-1 lg:col-span-2 pl-24">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10 xl:gap-20 mt-14">
+                        <div class="col-span-1 md:col-span-2 pl-4 md:pl-24">
                             <h4 class="text-roxo">No mesmo periodo,</h4>
                         </div>
 
                         <div class="pr-10 pl-4 flex flex-row justify-between items-start">
-                            <img src="./svgs/ico-liderando-acucar.svg" class="w-10 mr-8 pt-14" alt="">
+                            <img src="./svgs/ico-liderando-acucar.svg" class="hidden lg:block w-10 mr-8 pt-14" alt="">
                             <div class="flex flex-col flex-grow text-[#78787A]">
                                 <div class="w-full h-px block bg-roxo mb-6"></div>
                                 <span class="text-lg xl:text-[27px]">fabricamos</span>
@@ -285,7 +291,7 @@
                         </div>
 
                         <div class="pr-10 pl-4 flex flex-row justify-between items-start">
-                            <img src="./svgs/ico-liderando-etanol.svg" class="w-12 mr-8 pt-14" alt="">
+                            <img src="./svgs/ico-liderando-etanol.svg" class="hidden lg:block w-12 mr-8 pt-14" alt="">
                             <div class="flex flex-col flex-grow text-[#78787A]">
                                 <div class="w-full h-px block bg-laranja mb-6"></div>
                                 <span class="text-lg xl:text-[27px]">produzimos</span>
@@ -298,7 +304,7 @@
                         </div>
 
                         <div class="pr-10 pl-4 flex flex-row justify-between items-start">
-                            <img src="./svgs/ico-eletricidade.svg" class="w-12 mr-8 pt-14" alt="">
+                            <img src="./svgs/ico-eletricidade.svg" class="hidden lg:block w-12 mr-8 pt-14" alt="">
                             <div class="flex flex-col flex-grow text-[#78787A]">
                                 <div class="w-full h-px block bg-amarelo mb-6"></div>
                                 <span class="text-lg xl:text-[27px]">e geramos</span>
@@ -310,7 +316,7 @@
                             </div>
                         </div>
 
-                        <div class="pr-10 ml-[82px]">
+                        <div class="px-4 md:pr-10 lg:ml-[82px]">
                             <a href="#" class="group btnBox">
                                 <span class="text-[22px] group-hover:text-white">Clique aqui e veja o que já avançamos nessa trajetória.</span>
                                 <img src="./svgs/arrow.svg" class="w-6" alt="">
@@ -329,9 +335,9 @@
                         </div>    
                     </div>
 
-                    <div class="container w-full flex xl:hidden justify-center mt-20">
-                        <a href="#" class="group borderYbtn w-[540px]">
-                            <img src="./svgs/ico-download.svg" class="w-[26px]">
+                    <div class="container w-full flex xl:hidden justify-center mt-6 md:mt-20">
+                        <a href="#" class="group borderYbtn w-full sm:w-[540px]">
+                            <img src="./svgs/ico-download.svg" class="w-[26px] mr-6 sm:mr-0">
                             <span><strong>Baixe o relatório</strong> na íntegra</span>
                             <div class="group-hover:h-full group-hover:rounded-md"></div>
                         </a>
@@ -343,10 +349,10 @@
 
 
             <!-- Destaque Safra: Hero & content -->
-            <section class="contentsec h-screen bg-destaquesafra bg-[position:right_center] bg-cover bg-no-repeat mt-20" id="destaques-safra">
+            <section class="contentsec h-screen bg-destaquesafra bg-[position:right_center] bg-cover bg-no-repeat mt-8 md:mt-20" id="destaques-safra">
                 <div class="container h-full z-[2]">
-                    <div class="grid lg:grid-cols-2 h-full">
-                        <div class="pr-40 xl:pr-10 pb-28 flex flex-col justify-end items-start">
+                    <div class="grid md:grid-cols-2 h-full">
+                        <div class="pr-8 md:pr-20 lg:pr-40 xl:pr-10 md:pb-28 flex flex-col justify-end items-start">
                             <img src="./svgs/ico-safra.svg" class="iconChapter" alt="">
                             <div class="w-full h-px block bg-white"></div>
                             <div class="bigNumber">02</div>
@@ -354,7 +360,7 @@
                             <div class="w-full h-px block bg-white mt-4"></div>
                         </div>
 
-                        <div class="flex flex-col justify-start items-end">
+                        <div class="flex flex-col justify-start items-end pr-7 md:pr-0">
                             <img src="./svgs/logo-bolsa.svg" class="w-16 xl:w-20 mb-8 pt-24" alt="Logo B3">
                             <p class="text-white text-2xl xl:text-3xl text-right pl-20 xl:pl-40">
                                 <span class="font-din_bold uppercase">Maior IPO de 2021 na B3</span>, <br> bolsa de valores oficial do Brasil, na qual passamos a comercializar ações sob o ticker <span class="font-din_bold">RAIZ4</span>
@@ -362,14 +368,16 @@
                         </div>
                     </div>
                 </div>
-                <img src="./svgs/hexagono-destaquesafra.svg" class="absolute top-0 left-1/2 lg:-ml-[900px] xl:-ml-[1000px] z-[1] h-hexagdestaque" alt="">
+                <img src="./svgs/hexagono-destaquesafra.svg" class="absolute top-0 z-[1] h-hexagdestaque left-1/2 hidden md:block md:-ml-[900px] lg:-ml-[900px] xl:-ml-[1000px] " alt="">
+                <img src="./svgs/hexagono-destaquesafra-mobile.svg" class="absolute top-0 -left-4 opacity-90 z-[1] h-full block md:hidden" alt="">
                 <div class="borderChapter bg-cyan"></div>
             </section>
+
             <section class="contentsec bg-no-repeat bg-hexagcontent bg-[position:left_top] bg-[length:70%_auto] border border-transparent">
                 <div class="container">
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-14 gap-y-10 mt-24">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-14 gap-y-10 mt-24">
 
-                        <div class="pr-10 pl-4 w-full">
+                        <div class="md:pr-10 pl-2 md:pl-4 w-full">
                             <div class="flex flex-col xl:flex-row justify-start items-center mb-10">
                                 <img src="./svgs/ico-secsafra-1.svg" class="mb-4 w-16 mr-6" alt="">
                                 <p class="text-[17px] xl:text-[20px] 2xl:text-[24px] text-cinzatxt leading-tight">Conclusão da integração com a Biosev, incorporando 10 mil funcionários e nove parques de bioenergia – com capacidade de exportar 1.316 GWh de energia elétrica.</p>
@@ -380,7 +388,7 @@
                             </div>
                         </div>
 
-                        <div class="pr-10 pl-4 w-full">
+                        <div class="md:pr-10 pl-2 md:pl-4 w-full">
                             <div class="flex flex-col xl:flex-row justify-start items-center mb-10">
                                 <img src="./svgs/ico-secsafra-3.svg" class="mb-4 w-12 xl:w-16 mr-6" alt="">
                                 <p class="text-[17px] xl:text-[20px] 2xl:text-[24px] text-cinzatxt leading-tight">Aquisição de 50% da Barcos Y Rodados para entrarmos no Paraguai, onde vamos operar, por meio da marca Shell, com 340 postos de revenda.</p>
@@ -392,9 +400,9 @@
                             </div>
                         </div>
 
-                        <div class="pr-10 pl-4 pt-6 xl:pt-20 w-full col-span-2 xl:col-span-1 flex justify-center ">
+                        <div class="md:pr-10 pl-2 md:pl-4 pt-6 xl:pt-20 w-full md:col-span-2 xl:col-span-1 flex justify-center ">
                             <a href="#" class="group borderYbtn w-[540px] xl:w-full">
-                                <img src="./svgs/ico-download.svg" class="w-[26px]">
+                                <img src="./svgs/ico-download.svg" class="w-[26px] mr-6 sm:mr-0">
                                 <span><strong>Baixe o resumo executivo</strong></span>
                                 <div class="group-hover:h-full group-hover:rounded-md"></div>
                             </a>
@@ -403,26 +411,31 @@
                 </div>
             </section>
 
-            <section class="relative w-full h-[205px] xl:h-[320px] 2xl:h-[400px] block mt-20 ">
-                <div class="contentsec h-full bg-gradient-to-r from-roxo via-[#05C3DE] to-[#05C3DE]/20">
-                    <div class="container z-[1] relative h-full flex justify-start">
-                        <div class="h-full flex items-center pr-8">
+            <section class="relative w-full h-auto md:h-[205px] xl:h-[320px] 2xl:h-[400px] block mt-20 ">
+                <div class="contentsec h-full bg-gradient-to-tr md:bg-gradient-to-r from-roxo to-[#05C3DE] md:via-[#05C3DE] md:to-[#05C3DE]/20">
+                    <div class="container z-[1] relative h-full flex flex-col md:flex-row justify-start">
+                        <div class="h-full flex justify-center md:justify-start items-center py-8 md:py-0 md:pr-8">
                             <img src="./svgs/ico-lucro.svg" class="w-28 xl:w-32" alt="">
                         </div>
-                        <div class="h-full flex items-center px-6 xl:px-14 xl:pr-20 bg-roxo">
+                        <div class="h-full hidden md:flex items-center px-6 xl:px-14 xl:pr-20 bg-roxo">
                             <span class="text-white leading-tight text-[26px] xl:text-3xl font-din_ultralight w-[240px] xl:w-[260px]">R$ XX bilhões de EBITDA combinado e consolidado ajustado.</span>
                         </div>
-                        <div class="h-full flex items-center px-8 xl:px-14">
-                            <span class="text-roxo leading-tight text-[26px] xl:text-3xl font-din_ultralight"> O lucro líquido atribuível a acionistas controladores somou R$ XX bilhões no período.</span>
+                        <div class="full-width bg-roxo flex md:hidden">
+                            <div class="container py-8">
+                                <span class="text-white leading-tight text-[26px] xl:text-3xl font-din_ultralight w-[240px] xl:w-[260px]">R$ XX bilhões de EBITDA combinado e consolidado ajustado.</span>
+                            </div>
+                        </div>
+                        <div class="h-full flex items-center py-8 md:py-0 md:px-8 xl:px-14">
+                            <span class="text-white md:text-roxo leading-tight text-[26px] xl:text-3xl font-din_ultralight"> O lucro líquido atribuível a acionistas controladores somou R$ XX bilhões no período.</span>
                         </div>
                     </div>
                 </div>
             </section>
 
             <section class="contentsec pb-10 xl:pb-0 pt-10 bg-[#F4F4F4]">
-                <div class="container flex flex-wrap">
+                <div class="container flex flex-wrap justify-center lg:justify-start">
                     <div class="w-full lg:w-[40%]">
-                        <img src="./svgs/logo-globlcompact.svg" class="lg:w-[78px] xl:w-32 mb-10" alt="">
+                        <img src="./svgs/logo-globlcompact.svg" class="mx-auto lg:mx-0 w-[78px] xl:w-32 mb-10" alt="">
                         <ul>
                             <li class="flex items-start mb-6">
                                 <img src="./svgs/ico-bullet.svg" class="w-8 mr-4" alt="">
@@ -450,7 +463,7 @@
 
                     </div>
 
-                    <div class="w-full lg:w-[60%] pl-20 pt-28 xl:pt-20">
+                    <div class="w-full lg:w-[60%] lg:pl-20 pt-6 lg:pt-28 xl:pt-20">
                         <div class="relative w-full bg-white aspect-ratiodestaque drop-shadow-xl flex justify-center items-center">
                             <img src="./svgs/ico-image.svg" class="w-6 opacity-60" alt="">
                         </div>
@@ -458,7 +471,7 @@
 
                     <div class="w-full flex justify-center xl:hidden border">
                         <a href="#" class="group borderYbtn w-[540px] mt-10">
-                            <img src="./svgs/ico-download.svg" class="w-[26px]">
+                            <img src="./svgs/ico-download.svg" class="w-[26px] mr-6 sm:mr-0">
                             <span><strong>Baixe o relatório</strong> na íntegra</span>
                             <div class="group-hover:h-full group-hover:rounded-md"></div>
                         </a>
@@ -466,11 +479,11 @@
                 </div>
             </section>
 
-            <section class="contentsec bg-white h-screen bg-mensagem bg-[position:right_center] bg-cover bg-no-repeat xl:mt-20" id="mensagem">
+            <section class="contentsec bg-white h-screen bg-mensagem bg-[position:20%_center] md:bg-center lg:bg-[position:right_center] bg-cover bg-no-repeat xl:mt-20" id="mensagem">
                 <div class="container h-full">
-                    <div class="grid lg:grid-cols-12 h-full">
-                        <div class="col-span-4 xl:col-span-6"></div>
-                        <div class="col-span-8 xl:col-span-6 flex flex-col justify-end items-start mb-28 pr-[330px] xl:pr-20">
+                    <div class="grid md:grid-cols-12 h-full">
+                        <div class="md:col-span-6 lg:col-span-4 xl:col-span-6"></div>
+                        <div class="md:col-span-6 lg:col-span-8 xl:col-span-6 flex flex-col justify-end items-start mb-28 lg:pr-[330px] xl:pr-20">
                             <img src="./svgs/ico-message.svg" class="iconChapter" alt="">
                             <div class="w-full h-px block bg-white"></div>
                             <div class="bigNumber">03</div>
@@ -483,43 +496,43 @@
             </section>
             <section class="contentsec">
                 <div class="container flex flex-col justify-start items-end">
-                    <div class="md:w-8/12 xl:w-1/2 mt-10">
+                    <div class="md:w-9/12 lg:w-8/12 xl:w-1/2 mt-10">
                         <p class="lg:text-[17px] xl:text-[20px] 2xl:text-[24px] text-cinzatxt ">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostru.
                         </p>
                     </div>
 
-                    <div class="relative lg:w-[80%] xl:w-9/12 -mt-8 pb-14 xl:pb-20 flex">
-                        <img src="./svgs/aspas-inicio.svg" class="w-14 xl:w-32" alt="">
-                        <p class="pt-24 xl:pt-28 pl-8 pr-20 text-roxo text-xl xl:text-[22px] xl:text-4xl">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et</p>
-                        <img src="./svgs/aspas-fim.svg" class="w-14 xl:w-40 absolute right-0 bottom-0 xl:bottom-2" alt="">
+                    <div class="relative lg:w-[80%] xl:w-9/12 -mt-8 pb-6 md:pb-14 xl:pb-20 flex">
+                        <img src="./svgs/aspas-inicio.svg" class="-translate-y-14 md:translate-y-0 w-12 md:w-14 xl:w-32" alt="">
+                        <p class="pt-14 pl-3 md:pt-24 md:pl-8 md:pr-20 xl:pt-28 text-roxo text-xl xl:text-[22px] xl:text-4xl">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et</p>
+                        <img src="./svgs/aspas-fim.svg" class="w-12 md:w-14 xl:w-40 absolute right-0 bottom-0 xl:bottom-2" alt="">
                     </div>
                 </div>
-                <img src="./svgs/hexagline-presidente.svg" class="absolute 
+                <img src="./svgs/hexagline-presidente.svg" class="absolute hidden md:block
                     -left-36 bottom-[-160px] w-[500px]
                     xl:left-[-130px] xl:bottom-[-210px] xl:w-[600px] 
                     " alt="">
             </section>
             <section class="contentsec">
-                <img src="./imgs/presidente.png" class="h-[290px] xl:h-[360px] 2xl:h-[512px] absolute left-[-180px] top-[-90px] xl:top-[-110px]" alt="">
+                <img src="./imgs/presidente.png" class="hidden lg:block h-[290px] xl:h-[360px] 2xl:h-[512px] absolute left-[-180px] top-[-90px] xl:top-[-110px]" alt="">
                 <div class="container flex flex-col justify-start items-end">
-                    <div class="md:w-8/12 xl:w-1/2 mt-10">
+                    <div class="md:w-9/12 lg:w-8/12 xl:w-1/2 mt-6 md:mt-10">
                         <p class="lg:text-[17px] xl:text-[20px] 2xl:text-[24px] text-cinzatxt ">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostru.
                         </p>
                     </div>
                 </div>
 
-                <div class="container flex justify-start items-end mt-20">
+                <div class="container flex justify-center xl:justify-start items-end mt-10 lg:mt-20">
 
-                    <div class="w-1/2">
-                        <a href="#" class="hidden xl:flex group borderYbtn justify-start max-w-[440px]">
+                    <div class="w-1/2 hidden xl:flex ">
+                        <a href="#" class="group borderYbtn justify-start max-w-[440px]">
                             <img src="./svgs/ico-download.svg" class="w-[26px] mr-10">
                             <span><strong>Saiba mais</strong> no relatório</span>
                             <div class="group-hover:h-full group-hover:rounded-md"></div>
                         </a>
                     </div>
 
-                    <div class="w-full xl:w-1/2">
-                        <a href="#" class="group borderYbtn justify-start max-w-[440px]">
+                    <div class="w-full flex justify-center xl:block xl:w-1/2">
+                        <a href="#" class="group borderYbtn justify-start w-[420px] lg:w-auto max-w-[420px]">
                             <img src="./svgs/ico-download.svg" class="w-[26px] mr-10">
                             <span><strong>Resumo executivo</strong></span>
                             <div class="group-hover:h-full group-hover:rounded-md"></div>
@@ -529,10 +542,10 @@
             </section>
 
 
-            <section class="contentsec h-screen bg-modelounico bg-[position:right_center] bg-cover bg-no-repeat mt-20" id="modelo-unico">
+            <section class="contentsec h-screen bg-modelounicomobile bg-[position:20%_center] md:bg-modelounico md:bg-[position:right_center] bg-cover bg-no-repeat mt-20" id="modelo-unico">
                 <div class="container h-full z-[2]">
                     <div class="w-full lg:w-1/2 h-full">
-                        <div class="pr-48 xl:pr-10 pb-28 flex flex-col justify-end items-start h-full">
+                        <div class="pr-6 lg:pr-48 xl:pr-10 pb-28 flex flex-col justify-end items-start h-full">
                             <img src="./svgs/ico-modelounico-dna.svg" class="iconChapter" alt="">
                             <div class="w-full h-px block bg-white"></div>
                             <div class="bigNumber">04</div>
@@ -545,32 +558,36 @@
             </section>
             <div class="contentsec mt-20">
                 <div class="container flex justify-between gap-12 xl:gap-8">
-                    <div class="w-7/12">
+                    <div class="hidden md:block w-7/12">
                         <div class="border-b-4 bg-slate-100 border-amarelo w-full h-[320px] xl:h-[370px] block">
                             <!-- panoramic viewer -->
                             <!-- <div id="my-zoomist" class="w-full h-full border border-green-500" data-zoomist-src="./imgs/mapa-lg.png"></div> -->
                         </div>
                     </div>
-                    <div class="w-5/12">
+                    <div class="w-full md:w-5/12">
                         <div class="text-amarelo font-din_bold text-[66px] xl:text-[100px] mb-0 leading-[0.88em] block ">35</div> 
                         <div class="text-cinzatxt font-din_light text-[40px] leading-[0.9em]">parques de <br> bioenergia</div>
                         <p class="lg:text-[17px] xl:text-[20px] 2xl:text-[24px] text-cinzatxt mt-6"> localizados nas regiões Sudeste e Centro-Oeste do Brasil, próximos aos mercados consumidores e agrupados em clusters sinérgicos, com acesso à infraestrutura logística – tanto para escoamento no mercado doméstico quanto para exportação.</p>
                     </div>
                 </div>
+
+                <a href="#" class="flex md:hidden relative bg-maparoxo bg-center bg-cover bg-no-repeat mt-8 aspect-mapa justify-center items-center">
+                    <img src="./svgs/ico-mapa.svg" class="w-12 mr-2" alt="">
+                    <span class=" font-din_light text-2xl text-white leading-[0.98em]">Veja o<br>mapa</span>
+                </a>
             </div>
 
-            <div class="contentsec mt-20 bg-tarjacontrole bg-center bg-cover bg-no-repeat h-[330px]">
+            <div class="contentsec mt-14 lg:mt-20 bg-tarjacontrole bg-center bg-cover bg-no-repeat h-auto md:h-[330px]">
                 <div class="container">
-                    <div class="flex justify-center items-center px-10 xl:px-32 py-8">
-                        <img src="./svgs/ico-secmodelounico-1.svg" class="w-[144px] xl:w-28 mr-8" alt="">
-                        <p class="text-[29px] xl:text-[22px] 2xl:text-[29px] text-white mt-6 leading-tight"><strong>Controle de uma das maiores redes de distribuição de combustíveis do Brasil, Paraguai e da Argentina</strong>, o que inclui terminais multimodais estrategicamente localizados:</p>
+                    <div class="flex flex-col md:flex-row justify-center items-center px-4 md:px-10 xl:px-32 py-8">
+                        <img src="./svgs/ico-secmodelounico-1.svg" class="w-[58px] md:w-[144px] xl:w-28 md:mr-8" alt="">
+                        <p class="text-lg md:text-[29px] xl:text-[22px] 2xl:text-[29px] text-white mt-6 leading-tight"><strong>Controle de uma das maiores redes de distribuição de combustíveis do Brasil, Paraguai e da Argentina</strong>, o que inclui terminais multimodais estrategicamente localizados:</p>
                     </div>
-
                 </div>
             </div>
-            <div class="contentsec -mt-[80px] xl:-mt-[140px]">
+            <section class="contentsec mt-6 md:-mt-[80px] xl:-mt-[140px]">
                 <div class="container">
-                    <div class="grid md:grid-cols-3 xl:grid-cols-6 md:gap-12 lg:gap-x-20 lg:gap-y-10 xl:gap-8 lg:px-20 xl:px-8">
+                    <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-x-6 gap-y-10 md:gap-12 lg:gap-x-20 lg:gap-y-10 xl:gap-8 lg:px-20 xl:px-8">
                         <div class="boxDist">
                             <div class="boxDist__holderimg">
                                 <img src="./imgs/controle1.jpg" class="" alt="">
@@ -627,55 +644,62 @@
                     </div>
 
 
-                    <div class="grid lg:grid-cols-2 gap-20 mt-20 px-20 lx:px-0">
-                        <div class="flex">
+                    <div class="grid md:grid-cols-2 gap-10 md:gap-20 mt-20 md:px-4 lg:px-20 lx:px-0">
+                        <div class="flex flex-col items-center md:flex-row md:items-start">
                             <div class="w-[60px]">
-                                <img src="./svgs/ico-secmodelounico-2.svg" class="w-[40px]" alt="">
+                                <img src="./svgs/ico-secmodelounico-2.svg" class="w-12 md:w-[40px] mb-4" alt="">
                             </div>
                             <p class="w-full border-l border-amarelo pl-5 flex-shrink flex-grow lg:text-[20px] 2xl:text-[24px] text-cinzatxt xl:pr-20"><strong>Capacidade de processamento de cana maior</strong> que diversos países, como China, Tailândia, México, Paquistão e Estados Unidos.</p>
                         </div>
 
-                        <div class="flex">
+                        <div class="flex flex-col items-center md:flex-row md:items-start">
                             <div class="w-[60px]">
-                                <img src="./svgs/ico-secmodelounico-3.svg" class="w-[40px]" alt="">
+                                <img src="./svgs/ico-secmodelounico-3.svg" class="w-[40px] mb-4" alt="">
                             </div>
                             <p class="w-full border-l border-amarelo pl-5 flex-shrink flex-grow lg:text-[20px] 2xl:text-[24px] text-cinzatxt xl:pr-20"><strong>Cerca de <span class="text-4xl">15 mil</span> parceiros de negócios</strong>: produtores de cana-de-açúcar, transportadoras, revendedores e fornecedores.</p>
                         </div>
 
-                        <div class="flex">
+                        <div class="flex flex-col items-center md:flex-row md:items-start">
                             <div class="w-[60px]">
-                                <img src="./svgs/ico-secmodelounico-4.svg" class="w-[40px]" alt="">
+                                <img src="./svgs/ico-secmodelounico-4.svg" class="w-[40px] mb-4" alt="">
                             </div>
                             <p class="w-full border-l border-amarelo pl-5 flex-shrink flex-grow lg:text-[20px] 2xl:text-[24px] text-cinzatxt xl:pr-20"><strong>Mais de <span class="text-4xl">40 mil</span> funcionárias e funcionários</strong>, com meta de, até 2025, alcançar 30% de mulheres em cargos de liderança, a partir de coordenações – a proporção atual é 21%.</p>
                         </div>
 
-                        <div class="flex">
+                        <div class="flex flex-col items-center md:flex-row md:items-start">
                             <div class="w-[60px]">
-                                <img src="./svgs/ico-secmodelounico-5.svg" class="w-[40px]" alt="">
+                                <img src="./svgs/ico-secmodelounico-5.svg" class="w-[40px] mb-4" alt="">
                             </div>
                             <p class="w-full border-l border-amarelo pl-5 flex-shrink flex-grow lg:text-[20px] 2xl:text-[24px] text-cinzatxt xl:pr-20">Cerca de <span class="text-4xl font-din_bold">1,5 milhão</span> de <strong>hectares de terra cultivada</strong>.</p>
                         </div>
                     </div>
 
-                    <div class="w-full flex justify-end mt-14 lg:pr-20">
-                        <a href="#" class="group borderYbtn justify-start w-[390px]">
+                    <div class="w-full flex justify-center xl:justify-end mt-14 lg:pr-20">
+                        <a href="#" class="group borderYbtn justify-start w-[540px] xl:w-[390px]">
                             <img src="./svgs/ico-download.svg" class="w-[26px] mr-10">
                             <span><strong>leia mais</strong><br>no relatório completo</span>
                             <div class="group-hover:h-full group-hover:rounded-md"></div>
                         </a>
                     </div>
+                </div>
+            </section>
 
-                    <div class="relative w-full my-20">
+            <section class="contentsec mt-28">
+                <div class="container">
+                    <div class="relative w-full pb-10">
                         <div class="uppercase text-roxo font-din_light text-3xl w-[350px] mb-4">Estrutura de comercialização com <strong>alcance global</strong>.</div>
 
-                        <img src="./imgs/mapa-lg.png" class="w-full" alt="">
+                        <div class="w-full overflow-x-auto">
+                            <img src="./imgs/mapa-lg.png" class="min-w-[800px] w-full" alt="">
+                        </div>
                     </div>
-
                 </div>
-            </div>
+                <div class="borderChapter from-laranja to-amarelo h-full"></div>
+            </section>
+
             <section class="contentsec pt-16 bg-[#F4F4F4]">
-                <div class="container flex">
-                    <div class="w-full lg:w-[40%]">
+                <div class="container flex flex-wrap">
+                    <div class="w-full md:w-[50%] xl:w-[40%]">
                         <img src="./svgs/ico-rastreabilidade.svg" class="w-9 mb-10" alt="">
                         <h4 class="text-roxo mb-4">Rastreabilidade da nossa matéria-prima:</h4>
                         <ul>
@@ -691,7 +715,7 @@
                         </ul>
                     </div>
 
-                    <div class="w-full lg:w-[60%] pl-20 pt-20">
+                    <div class="w-full md:w-[50%] xl:w-[50%] md:pl-10 xl:pl-20 pt-6 md:pt-20">
                         <div class="relative w-full bg-white aspect-ratiodestaque drop-shadow-xl flex justify-center items-center">
                             <img src="./svgs/ico-image.svg" class="w-6 opacity-60" alt="">
                         </div>
@@ -699,9 +723,9 @@
                 </div>
 
                 <div class="container mt-10">
-                    <div class="relative w-10/12 mx-auto z-[2]">
+                    <div class="relative w-full md:w-10/12 mx-auto z-[2]">
                         <a href="#" class="group btnBox">
-                            <span class="text-[34px] font-din_light group-hover:text-white">Clique aqui e conheça nossos diferenciais competitivos</span>
+                            <span class="text-3xl leading-tight pr-10 xl:pr-0 xl:text-[34px] font-din_light group-hover:text-white">Clique aqui e conheça nossos diferenciais competitivos</span>
                             <img src="./svgs/arrow.svg" class="w-6" alt="">
                         </a>
                     </div>
