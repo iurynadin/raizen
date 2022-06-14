@@ -50,6 +50,7 @@
         }
     );
     
+    lc_mouseDrag('#inner', 0.5, false, false);
     
 })(jQuery);
 
