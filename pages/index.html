@@ -204,7 +204,7 @@
 
 
             <!-- Hero -->
-            <section class="contentsec relative h-screen md:h-[500px] lg:h-screen bg-roxo bg-heromobile bg-center bg-cover bg-no-repeat md:bg-none flex flex-col items-end justify-center pr-10 sm:pr-20 xl:pr-20">
+            <section class="relative h-screen  md:h-[500px] lg:h-screen bg-roxo bg-heromobile bg-center bg-cover bg-no-repeat md:bg-none flex flex-col items-end justify-center pr-10 sm:pr-20 xl:pr-20">
 
                 <h1 class="text-white uppercase text-right font-din_ultralight relative z-[5]">
                     <span class="text-[44px] lg:text-[61px] xl:text-[70px] 2xl:text-[84px] leading-[0.99em]">
@@ -222,7 +222,13 @@
                 <div class="hidden md:block absolute top-0 left-0 w-full h-full bg-moviefilter bg-center bg-cover bg-no-repeat z-[3]"></div>
 
                 <!-- simulação vídeo -->
-                <div class="hidden md:block video absolute top-0 left-0 w-full h-full bg-herovideo bg-center bg-cover bg-no-repeat"></div>
+                <!-- <div class="hidden md:block video absolute top-0 left-0 w-full h-full bg-herovideo bg-center bg-cover bg-no-repeat"></div> -->
+                <div class="hidden md:block absolute top-0 left-0 w-full h-full">
+                        <video class="h-full w-full" poster="./video/herovideo.jpg" autoplay="" playsinline="" muted="" loop="">
+                            <source src="./video/hero.mp4" type="video/mp4">
+                            <source src="./video/hero.webm" type="video/webm">
+                        </video>                        
+                </div>
             </section>
 
 
@@ -560,6 +566,7 @@
                 <div class="container flex justify-between gap-12 xl:gap-8">
                     <div class="hidden md:block w-7/12">
                         <div class="relative z-[5] border-b-4 border-amarelo w-full h-[320px] xl:h-[370px] hover:scale-[1.4] origin-top-left block transition-all duration-300 ">
+                            <img src="./svgs/ico-panviewer.svg" class="w-8 absolute z-[5] bottom-3 right-2 block" alt="">
                             <div id="wrap" class="w-full border-b-4 h-full border-amarelo">
                                 <div id="inner">
                                     <img src="./imgs/mapa.jpg" />

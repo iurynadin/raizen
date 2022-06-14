@@ -247,6 +247,15 @@ Bold
 
     }
 
+    video {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
     .iconChapter{
         @apply mt-7 mb-4 xl:my-8 w-5 xl:w-10;
     }
