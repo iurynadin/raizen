@@ -738,7 +738,7 @@
                 <h1>CRESCIMENTO ESTRUTURADO</h1>
             </section>
             <!-- Proposta de Valor -->
-            <section class="relative contentsec h-[85vh] max-h-[50vw] bg-proposta bg-cover bg-right-bottom" id="proposta">
+            <section class="hidden lg:block relative contentsec h-[85vh] max-h-[50vw] bg-proposta bg-cover bg-right-bottom" id="proposta">
                 
                 <div class="absolute z-[4] top-0 left-0 w-[10px] lg:w-[40px] max-h-[60vw] xl:h-screen bg-gradient-to-b from-[#FDB515] to-[#781F78]"></div>
                 <img class="z-[3] absolute top-10 left-0 w-[39.8vw]  max-h-[130vh] object-cover object-left-top" src="./svgs/hexagono-proposta.svg" alt="">
@@ -757,12 +757,29 @@
                     </div>
                 </div>
             </section>
-            <section class="contentsec overflow-hidden">
+            <section class="lg:hidden bg-propostaMobile bg-cover bg-left-top">
+                <div class="container">
+                    <div class="w-full pb-5 h-full grid grid-cols-1 lg:grid-cols-2 gap-10 text-white">
+                        <div class="mt-36 flex flex-col justify-end items-start h-full mx-auto w-full lg:w-[80%]">
+                            <img src="./svgs/ico-propostavalor.svg" class="mt-8 lg:my-8 w-6" alt="">
+                            <div class="w-full h-px block bg-white"></div>
+                            <div class="bigNumber">06</div>
+                            <h1>Proposta<br>de valor no<br /><strong>longo prazo</strong></h1>
+                            <div class="w-full h-px block bg-white mt-4"></div>
+                        </div>
+                        <div class="pb-32 font-din_light xl:text-[28px] 2xl:text-[41px] place-self-start w-full lg:w-[60%] leading-tight mt-36 lg:mt-52">
+                            Gestão de riscos e oportunidades relacionados às mudanças climáticas segue as mesmas diretrizes adotadas para os aspectos financeiros e de negócios.
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contentsec z-[5] overflow-hidden">
                 <div class="container ">
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-28">
-                        <div class="flex flex-col mt-56 place-self-center w-[80%]">
-                            <div class="flex flex-col items-center lg:flex-row space-y-5 lg:space-x-16">
-                                <img class="w-[28px]" src="./svgs/ico-secproposta-1.svg" alt="">
+                        <div class="flex flex-col place-self-center w-[80%]">
+                            <img class="w-[271px] mx-auto" src="./svgs/logo-cdp.svg" alt="">
+                            <div class="flex flex-col items-center lg:flex-row space-y-5 lg:space-x-16  mt-10 lg:mt-0">
+                                <img class="w-[28px] justify-self-center" src="./svgs/ico-secproposta-1.svg" alt="">
                                 <span class="font-din_light text-cinzatxt text-[24px]">
                                     Excelente desempenho no CDP Climate Change: “A List”, ao lado apenas das empresas com maior avaliação do questionário, consolidando uma trajetória de sucessivos avanços.
                                 </span>
@@ -837,7 +854,7 @@
                                 <img class="w-full" src="./svgs/proposta-foto-2.svg" alt="">
                                 <div class="lg:mx-5 xl:mx-10 2xl:mx-20 font-din">Sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et<br /><strong>Laudantium Totam Rem</strong></div>
                             </div>
-                            <div class="w-full lg:w-[33%] mt-10 lg:mt-0">
+                            <div class="w-full lg:w-[33%] my-10 md:my-0">
                                 <img class="w-full" src="./svgs/proposta-foto-3.svg" alt="">
                                 <div class="lg:mx-5 xl:mx-10 2xl:mx-20 font-din">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et<br /><strong>Laudantium Totam Rem</strong></div>
                             </div>
@@ -847,11 +864,11 @@
                     </div>
                     
                 </div>
-                <div class="container flex justify-start items-end my-32 w-[90%] mx-auto">
+                <div class="container hidden md:flex justify-start items-end  my-32 w-[90%] mx-auto">
                     <div class="w-full xl:w-1/2">
-                        <a href="#" class=" group borderYbtn justify-start max-w-[440px]">
+                        <a href="#" class=" group borderYbtn-sm justify-start max-w-[440px]">
                             <img src="./svgs/ico-download.svg" class="w-[26px] mr-10">
-                            <span><strong>Saiba mais</strong> no relatório</span>
+                            <span><strong>Leia mais<br /></strong> no relatório completo</span>
                             <div class="group-hover:h-full group-hover:rounded-md"></div>
                         </a>
                     </div>
@@ -915,26 +932,26 @@
                             <span class="lg:col-span-3 mt-16 lg:mt-0 font-din_bold text-[47px] text-roxo">ACESSE <span class="font-din_light">TAMBÉM</span></span>
                             <div class="place-self-center w-full">
                                 <a href="#" class="group btnBox flex items-center justify-between px-8 py-4 hover:pl-10 hover:pr-6 border-[3px] bg-white hover:bg-roxo border-white drop-shadow-xl transition-all duration-300">
-                                    <span class="font-din_light text-[40px] leading-none text-cinzatxt group-hover:text-white duration-300 transition-all">Nossa<br /><span class="font-din_bold group-hover:text-white duration-300 transition-all">Agenda esg</span></span>
+                                    <span class="font-din_light lg:text-[26px] xl:text-[30px] 2xl:text-[40px] leading-none text-cinzatxt group-hover:text-white duration-300 transition-all">Nossa<br /><span class="font-din_bold group-hover:text-white duration-300 transition-all">Agenda esg</span></span>
                                     <img src="./svgs/arrow.svg" class="w-6" alt="">
                                 </a>
                             </div>
                             <div class="place-self-center w-full">
                                 <a href="#" class="group btnBox flex items-center justify-between px-8 py-4 hover:pl-10 hover:pr-6 border-[3px] bg-white hover:bg-roxo border-white drop-shadow-xl transition-all duration-300">
-                                    <span class="font-din_light text-[40px] leading-none text-cinzatxt group-hover:text-white duration-300 transition-all">Relações com<br /><span class="group-hover:text-white duration-300 transition-all font-din_bold">Investidores</span></span>
+                                    <span class="font-din_light lg:text-[23px] xl:text-[30px] 2xl:text-[40px] leading-none text-cinzatxt group-hover:text-white duration-300 transition-all">Relações com<br /><span class="group-hover:text-white duration-300 transition-all font-din_bold">Investidores</span></span>
                                     <img src="./svgs/arrow.svg" class="w-6" alt="">
                                 </a>
                             </div>
                             <div class="place-self-center w-full">
                                 <a href="#" class="group btnBox flex items-center justify-between px-8 py-1 hover:pl-10 hover:pr-6 border-[3px] bg-white hover:bg-roxo border-white drop-shadow-xl transition-all duration-300">
-                                    <span class="font-din_light text-[36px] leading-none text-cinzatxt group-hover:text-white duration-300 transition-all"><span class="group-hover:text-white duration-300 transition-all text-[28px]">Relatório</span><br />Fundação<br /><span class="group-hover:text-white duration-300 transition-all font-din_bold">Raízen</span></span>
+                                    <span class="font-din_light lg:text-[20px] xl:text-[28px] 2xl:text-[36px] leading-none text-cinzatxt group-hover:text-white duration-300 transition-all"><span class="group-hover:text-white duration-300 transition-all lg:text-[18px] xl:text-[20px] 2xl:text-[28px]">Relatório</span><br />Fundação<br /><span class="group-hover:text-white duration-300 transition-all font-din_bold">Raízen</span></span>
                                     <img src="./svgs/arrow.svg" class="w-6" alt="">
                                 </a>
                             </div>
                             <div class="lg:col-span-3 place-self-center mt-20">
-                                <a href="#" class="group relative flex justify-start items-center border-t border-b py-5 pr-4 w-[465px] border-roxo hover:border-transparent transition-all duration-300 uppercase">
+                                <a href="#" class="group relative flex justify-start items-center border-t border-b py-5 pr-4 w-full md:w-[465px] border-roxo hover:border-transparent transition-all duration-300 uppercase">
                                     <img src="./svgs/ico-redessociais.svg" class="w-[64px] group-hover:ml-5 group-hover:mr-5 transition-all duration-300 mr-10">
-                                    <span class="text-roxo text-[32px] group-hover:-ml-5 transition-all duration-300"><strong>NOSSAS REDES SOCIAIS</strong></span>
+                                    <span class="text-roxo text-[20px] md:text-[32px] group-hover:-ml-5 transition-all duration-300"><strong>NOSSAS<span class="md:hidden"><br /></span> REDES SOCIAIS</strong></span>
                                     <div class="group-hover:h-full group-hover:rounded-md absolute top-0 left-0 z-0 w-full h-[3px] bg-gradient-to-r from-[#F57920] to-[#781E77] opacity-[0.15] block transition-all duration-300"></div>
                                 </a>
                             </div>
