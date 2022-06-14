@@ -136,7 +136,7 @@ Bold
 
     .sidebar{
         &__menu{
-            @apply relative m-0 p-0 flex flex-col justify-between items-start w-full;
+            @apply relative m-0 p-0 pb-4 flex flex-col justify-between items-start w-full;
 
             li{
                 @apply relative mb-4 text-[#78787A] transition-all duration-300 ;

@@ -51,6 +51,7 @@ module.exports = {
             aspectRatio: {
                 ratiodestaque: "163 / 115",
                 mapa: "160 / 93",
+                minimap: "287 / 230",
             },
             backgroundImage: {
                 heromobile: "url('../imgs/bg-hero-mobile.jpg')",
@@ -67,6 +68,7 @@ module.exports = {
                 proposta: "url('../svgs/bg-proposta.svg')",
                 propostaMobile: "url('../svgs/bg-proposta-mobile.svg')",
                 hexagono1: "url('../svgs/hexagono-01-mobile.svg')",
+                boxshell: "url('../svgs/mapa-shell-mobile.svg')",
             },
             boxShadow: {
             },

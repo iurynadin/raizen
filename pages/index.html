@@ -110,8 +110,8 @@
             <!-- Sidebar -->
             <div class="sidebar hidden xl:flex xl:w-[240px] xl:h-screen fixed z-30 bg-white top-0 left-0 flex-col items-start justify-between hover:xl:w-[320px] transition-all duration-[200]">
                 
-                <div class=" pt-10 pl-[33px]">
-                    <img src="./svgs/logo.svg" class="w-[143px] mb-8" alt="Logo Raizen">
+                <div class="pt-8 pl-[33px]">
+                    <img src="./svgs/logo.svg" class="w-[143px] mb-4" alt="Logo Raizen">
                     <span class="text-[15px] leading-snug text-[#7878s7A] inline-block">RELATÓRIO ANUAL DE<br> SUSTENTABILIDADE<span class="font-din_bold block">2021/2022</span> </span>
                 </div>
 
@@ -195,7 +195,7 @@
                     </ul>
                 </nav>
 
-                <ul class="sidebar__lang flex justify-around items-center mb-10 pl-[33px]">
+                <ul class="sidebar__lang flex justify-around items-center mb-6 pl-[33px]">
                     <li><a href="#">PT</a></li>
                     <li><a href="#">EN</a></li>
                     <li><a href="#">ES</a></li>
@@ -804,7 +804,7 @@
                                 <span class="font-din_light text-[#781F78] text-[20px] lg:text-[33px] uppercase">economia <strong>circular</strong></span>
                                 <div class="bg-[#781F78] h-px w-full my-10"></div>
                                 <span class="font-din_light text-cinzatxt text-[17px] lg:text-[24px]">Fomentarmos cada vez mais a circularidade dos nossos processos, produtos e negócios, orientados por três principios fundamentais da Economia Circular: </span>
-                                <img src="./svgs/economia-circular.svg" alt="">
+                                <img src="./svgs/economia-circular.svg" class="max-w-[400px]" alt="">
                             </div>
                         </div>
                         <div class="hidden lg:block lg:-mt-28">
@@ -839,18 +839,27 @@
                     <div class="container mt-20">
                         <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-10 w-full xl:w-[80%] mx-auto xl:max-w-[80%]">
                             <div class="flex flex-col font-din_light text-cinzatxt text-[33px] lg:text-[26px] xl:text-[28px] 2xl:text-[33px] place-self-center">
+
                                 <div class="z-[0] w-full relative flex flex-col xl:flex-row xl:items-center max-w-[503px] xl:h-[188px] -mt-10">
-                                    <img class="z-[1] hidden md:block absolute left-0 top-0  rounded-3xl" src="./svgs/mapa-shell.svg" alt="" />
-                                    <img class="z-[1] md:hidden absolute left-0 top-0  rounded-3xl" src="./svgs/mapa-shell-mobile.svg" alt="" />
-                                    <img class="z-[2] w-[108px] ml-5 lg:ml-10 -mt-[10%] xl:mt-0 xl:-ml-10 xl:mr-5" src="./svgs/shell-box.svg" alt="">
+                                    <img class="z-[2] hidden md:block w-[108px] ml-5 lg:ml-10 -mt-[10%] xl:mt-0 xl:-ml-10 xl:mr-5" src="./svgs/shell-box.svg" alt="">
+                                    <img class="z-[1] hidden md:block absolute left-0 top-0 xl:top-4 rounded-3xl" src="./svgs/mapa-shell.svg" alt="" />
                                     <img class="hidden xl:block z-[2] w-[56px]" src="./svgs/ico-local.svg" alt="" />
-                                    <span class="ml-10 mt-5 mr-7 lg:ml-14 lg:mt-5 xl:mt-0 xl:ml-0 uppercase z-[2] leading-none text-[#781F78]">sempre próximos<br /><strong>dos clientes</strong></span>    
+                                    <span class="hidden md:block ml-10 mt-5 mr-7 lg:ml-14 lg:mt-5 xl:mt-0 xl:ml-0 uppercase z-[2] leading-none text-[#781F78]">sempre próximos<br /><strong>dos clientes</strong></span> 
+                                    
+                                    <div class="border bg-boxshell bg-cover bg-center bg-no-repeat min-h-[220px] w-full aspect-minimap block md:hidden relative">
+                                        <img class="z-[2] w-[108px] ml-5 lg:ml-10 -mt-[10%] xl:mt-0 xl:-ml-10 xl:mr-5" src="./svgs/shell-box.svg" alt="">
+                                        <div class="ml-10 mt-5 mr-7 lg:ml-14 lg:mt-5 xl:mt-0 xl:ml-0 uppercase z-[2] text-[30px] leading-none text-[#781F78]">
+                                            sempre próximos<br />
+                                            <strong>dos clientes</strong>
+                                        </div>
+                                    </div>
                                 </div>
-                                <span class="text-[17px] text-[#781F78] lg:text-cinzatxt lg:text-[26px] mt-24 ml-0 lg:mt-10 lg:ml-5 2xl:mr-10">
+
+                                <span class=" text-[#781F78] lg:text-cinzatxt text-[17px] lg:text-[24px] ml-0 mt-10 lg:mt-16 xl:mt-10 lg:ml-5 2xl:mr-10">
                                     Investimento constante em ferramentas comerciais e de consumo para aumentar engajamento dos clientes: em setembro de 2021, anunciamos o <strong>Shell Box Empresas</strong> no Brasil, como <strong>forma de integrar ainda mais o Shell Box em nossas estratégias.</strong>
                                 </span>
                             </div>
-                            <div class="flex flex-col font-din_light text-cinzatxt text-[17px] xl:text-[24px]">
+                            <div class="flex flex-col font-din_light text-cinzatxt text-[17px] lg:text-[24px]">
                                 <span class="mt-10">
                                     A nova ferramenta permite o gerenciamento dos gastos da frota (de veículos leves, médios ou pesados) nos postos da rede.
                                 </span>
@@ -978,18 +987,18 @@
                         </div>
                     </div>
                 </div>
-
             </section>
-            <section class="contentsec bg-gradient-to-tr from-[#781F78]/50 via-[#FA9E2B]/25 to-[#F57920]/60 mb-10 md:mb-0 md:bg-none overflow-hidden pb-10">
-                <div class="container">
-                    <div class="relative flex flex-row justify-around mt-28">
 
-                        <div class="absolute z-[0] top-12 hidden md:block md:-left-[40vw] md:w-[150vw] h-[200px] lg:h-[300px] bg-gradient-to-r from-[#781F78] via-[#FA9E2B55] to-[#F57920]"></div>
+            <section class="contentsec bg-gradient-to-tr from-[#781F78]/50 via-[#FA9E2B]/25 to-[#F57920]/60 mb-10 md:mb-0 md:bg-none md:overflow-hidden pb-10">
+                <div class="container">
+                    <div class="relative flex flex-row justify-around mt-16 md:mt-28">
+
+                        <div class="absolute z-[0] top-12 hidden md:block md:-left-[40vw] md:w-[150vw] h-[220px] lg:h-[300px] bg-gradient-to-r from-[#781F78] via-[#FA9E2B55] to-[#F57920]"></div>
 
                         <div class="flex flex-col items-center md:items-start w-full md:w-[50%]">
-                            <img class="-mt-8 md:mt-0 w-[80%] md:w-full lg:w-[360px]" src="./svgs/ico-proposta-hor.svg" alt="">
+                            <img class="-mt-6 md:mt-0 w-[80%] lg:w-[360px]" src="./svgs/ico-proposta-hor.svg" alt="">
 
-                            <div class="w-[85%] md:w-full mt-10 font-din_light text-[20px] lg:text-[30px] xl:text-[36px] 2xl:text-[41px] text-[#421142] leading-tight">
+                            <div class="w-[85%] mb-8 md:mb-0 md:w-full mt-10 font-din_light text-[20px] lg:text-[30px] xl:text-[36px] 2xl:text-[41px] text-[#421142] leading-tight">
                                 Proposta de valor no longo prazo com Plano Estratégico de Sustentabilidade e metas a serem alcançadas até 2030.
                             </div>
                             <a href="#" class="hidden md:flex group -mb-10 btnBox translate-y-10 md:translate-y-0  items-center justify-between w-[85%] md:w-[80%] lg:w-[60%] xl:w-[50%] md:mt-10 px-8 py-6 hover:pl-10 hover:pr-6 border-[3px] bg-white hover:bg-roxo border-white drop-shadow-xl transition-all duration-300">
@@ -1103,41 +1112,49 @@
                             <p class="mt-5 pb-10 lg:pb-0 lg:mt-20 2xl:mt-16 pl-0 xl:pl-20 2xl:pl-32 lg:pr-96 xl:pr-64 text-[17px] xl:text-[18px] 2xl:text-[24px]">Também passamos a considerar, pela primeira vez, as recomendações da Task Force on Climate-related Financial Disclosures (TCFD), criada pelo Financial Stability Board (FSB); e as Métricas do Capitalismo Stakeholder, do World Economic Forum (WEF).</p>
                         </div>
                     </div>
+
                     <div class="hidden absolute z-[2] pl-10 pr-10 hover:pl-12 hover:pr-8 py-5 -bottom-[40%] lg:bottom-[20%] xl:bottom-[37%] 2xl:bottom-[45%] lg:right-0 xl:right-[5%] 2xl:right-[10%] w-[350px] xl:w-[520px] border-0 border-transparent hover:border-4 hover:border-white bg-roxo hover:bg-laranja transition-all duration-300 font-din leading-none lg:flex flex-row justify-center items-center space-x-10">
                         <img class="h-[56px] w-[56px]" src="./svgs/ico-download-branco.svg" alt="">
                         <div class="flex-grow text-center text-white text-[26px] xl:text-[29px]">Clique aqui e confira a <span class="font-din_bold">publicação completa!</span></div>
                         <img class="h-[25px] w-[25px]" src="./svgs/arrow-branca.svg" alt="">
-                    </div>                   
-                    <div class="lg:hidden -mb-5 z-[2] pl-7 pr-7  py-5  w-[280px] border-0 border-transparent   bg-roxo font-din leading-none flex flex-row justify-center items-center mx-auto space-x-10">
-                        <img class="h-[56px] w-[56px]" src="./svgs/ico-download-branco.svg" alt="">
-                        <div class="flex-grow text-center text-white text-[18px]">Clique aqui e confira a <span class="font-din_bold">publicação completa!</span></div>
+                    </div> 
+
+                    <!-- mobile -->
+                    <a href="#" class="lg:hidden -mb-5 z-[2] px-10 py-5 w-[284px] border-0 border-transparent   bg-roxo font-din leading-none flex flex-row justify-center items-center mx-auto space-x-6">
+                        <img class="h-[47px] w-[47px] mr-4" src="./svgs/ico-download-branco.svg" alt="">
+                        <div class="flex-grow text-left text-white text-[26px]">Clique aqui e confira a <span class="font-din_bold">publicação completa!</span></div>
                         <img class="h-[25px] w-[25px]" src="./svgs/arrow-branca.svg" alt="">
-                    </div>                    
+                    </a>                    
                 </div>              
                 <div class="relative bg-white ">
                     <div class="container">
-                        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 w-[90%] mx-auto mb-20 xl:-mt-24 2xl:-mt-32 uppercase">
-                            <span class="lg:col-span-3 mt-16 lg:mt-0 font-din_bold text-[47px] text-roxo">ACESSE <span class="font-din_light">TAMBÉM</span></span>
+                        <div class="grid grid-cols-1 lg:grid-cols-3 gap-7 md:gap-10 w-[90%] mx-auto mb-20 xl:-mt-24 2xl:-mt-32 uppercase">
+                            <span class="lg:col-span-3 mt-16 lg:mt-0 font-din_bold text-[26px] lg:text-[47px] text-roxo">ACESSE <span class="font-din_light">TAMBÉM</span></span>
                             <div class="place-self-center w-full">
+
                                 <a href="#" class="group btnBox flex items-center justify-between px-8 py-4 hover:pl-10 hover:pr-6 border-[3px] bg-white hover:bg-roxo border-white drop-shadow-xl transition-all duration-300">
-                                    <span class="font-din_light lg:text-[26px] xl:text-[30px] 2xl:text-[40px] leading-none text-cinzatxt group-hover:text-white duration-300 transition-all">Nossa<br /><span class="font-din_bold group-hover:text-white duration-300 transition-all">Agenda esg</span></span>
+                                    <span class="font-din_light text-[26px] lg:text-[23px] xl:text-[30px] 2xl:text-[40px] leading-none text-cinzatxt group-hover:text-white duration-300 transition-all">Nossa<br /><span class="font-din_bold group-hover:text-white duration-300 transition-all">Agenda esg</span></span>
                                     <img src="./svgs/arrow.svg" class="w-6" alt="">
                                 </a>
+
                             </div>
                             <div class="place-self-center w-full">
                                 <a href="#" class="group btnBox flex items-center justify-between px-8 py-4 hover:pl-10 hover:pr-6 border-[3px] bg-white hover:bg-roxo border-white drop-shadow-xl transition-all duration-300">
-                                    <span class="font-din_light lg:text-[23px] xl:text-[30px] 2xl:text-[40px] leading-none text-cinzatxt group-hover:text-white duration-300 transition-all">Relações com<br /><span class="group-hover:text-white duration-300 transition-all font-din_bold">Investidores</span></span>
+                                    <span class="font-din_light  group-hover:text-white duration-300 transition-all
+                                    text-[26px] lg:text-[23px] xl:text-[30px] 2xl:text-[40px]  ">Relações com<br /><span class="group-hover:text-white duration-300 transition-all font-din_bold">Investidores</span></span>
                                     <img src="./svgs/arrow.svg" class="w-6" alt="">
                                 </a>
                             </div>
+
                             <div class="place-self-center w-full">
                                 <a href="#" class="group btnBox flex items-center justify-between px-8 py-1 hover:pl-10 hover:pr-6 border-[3px] bg-white hover:bg-roxo border-white drop-shadow-xl transition-all duration-300">
-                                    <span class="font-din_light lg:text-[20px] xl:text-[28px] 2xl:text-[36px] leading-none text-cinzatxt group-hover:text-white duration-300 transition-all"><span class="group-hover:text-white duration-300 transition-all lg:text-[18px] xl:text-[20px] 2xl:text-[28px]">Relatório</span><br />Fundação<br /><span class="group-hover:text-white duration-300 transition-all font-din_bold">Raízen</span></span>
+                                    <span class="font-din_light text-[26px] lg:text-[23px] xl:text-[30px] 2xl:text-[40px] leading-none text-cinzatxt group-hover:text-white duration-300 transition-all"><span class="group-hover:text-white duration-300 transition-all text-[20px] lg:text-[18px] xl:text-[20px] 2xl:text-[28px]">Relatório</span><br />Fundação<br /><span class="group-hover:text-white duration-300 transition-all font-din_bold">Raízen</span></span>
                                     <img src="./svgs/arrow.svg" class="w-6" alt="">
                                 </a>
                             </div>
-                            <div class="lg:col-span-3 place-self-center mt-20">
-                                <a href="#" class="group relative flex justify-start items-center border-t border-b py-5 pr-4 w-full md:w-[465px] border-roxo hover:border-transparent transition-all duration-300 uppercase">
+
+                            <div class="lg:col-span-3 place-self-center mt-4 md:mt-20 border w-full md:w-auto">
+                                <a href="#" class="group relative flex justify-start items-center border-t border-b py-5 md:pr-4 w-full md:w-[465px] border-roxo hover:border-transparent transition-all duration-300 uppercase">
                                     <img src="./svgs/ico-redessociais.svg" class="w-[64px] group-hover:ml-5 group-hover:mr-5 transition-all duration-300 mr-10">
                                     <span class="text-roxo text-[20px] md:text-[32px] group-hover:-ml-5 transition-all duration-300"><strong>NOSSAS<span class="md:hidden"><br /></span> REDES SOCIAIS</strong></span>
                                     <div class="group-hover:h-full group-hover:rounded-md absolute top-0 left-0 z-0 w-full h-[3px] bg-gradient-to-r from-[#F57920] to-[#781E77] opacity-[0.15] block transition-all duration-300"></div>
