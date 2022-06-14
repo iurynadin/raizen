@@ -257,7 +257,7 @@ Bold
 
     #wrap {
         /* width: 642px; */
-        height: inherit;
+        /* height: inherit; */
         margin: auto;
         overflow: hidden;
         line-height: 0;

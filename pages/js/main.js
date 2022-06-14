@@ -50,7 +50,7 @@
         }
     );
     
-    lc_mouseDrag('#inner', 0.5, false, false);
+    lc_mouseDrag('#inner', 0.3, false, false);
     
 })(jQuery);
 
