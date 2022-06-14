@@ -65,7 +65,7 @@ module.exports = {
                 tarjacontrole: "url('../imgs/bg-tarjacontrole.jpg')",
                 crescimento: "url('../imgs/bg-crescimento.jpg')",
                 proposta: "url('../svgs/bg-proposta.svg')",
-                propostaMobile: "url('../svgs/proposta-mobile.svg')",
+                propostaMobile: "url('../svgs/bg-proposta-mobile.svg')",
                 hexagono1: "url('../svgs/hexagono-01-mobile.svg')",
             },
             boxShadow: {
