@@ -1472,6 +1472,51 @@ strong {
 .mr-\[4px\] {
   margin-right: 4px;
 }
+.-ml-\[60\%\] {
+  margin-left: -60%;
+}
+.-ml-20 {
+  margin-left: -5rem;
+}
+.-ml-44 {
+  margin-left: -11rem;
+}
+.-ml-52 {
+  margin-left: -13rem;
+}
+.ml-20 {
+  margin-left: 5rem;
+}
+.ml-12 {
+  margin-left: 3rem;
+}
+.ml-16 {
+  margin-left: 4rem;
+}
+.ml-14 {
+  margin-left: 3.5rem;
+}
+.mt-52 {
+  margin-top: 13rem;
+}
+.mt-44 {
+  margin-top: 11rem;
+}
+.ml-0 {
+  margin-left: 0px;
+}
+.mr-7 {
+  margin-right: 1.75rem;
+}
+.-mb-10 {
+  margin-bottom: -2.5rem;
+}
+.mt-0 {
+  margin-top: 0px;
+}
+.-mt-28 {
+  margin-top: -7rem;
+}
 .block {
   display: block;
 }
@@ -1844,6 +1889,9 @@ strong {
 }
 .place-self-center {
   place-self: center;
+}
+.self-start {
+  align-self: flex-start;
 }
 .self-center {
   align-self: center;
@@ -2434,14 +2482,8 @@ strong {
 .leading-none {
   line-height: 1;
 }
-.leading-\[1em\] {
-  line-height: 1em;
-}
 .leading-\[1\.2em\] {
   line-height: 1.2em;
-}
-.leading-normal {
-  line-height: 1.5;
 }
 .text-roxo {
   --tw-text-opacity: 1;
@@ -3038,11 +3080,11 @@ Bold
     .lg\:-left-10 {
     left: -2.5rem;
   }
-    .lg\:bottom-44 {
-    bottom: 11rem;
+    .lg\:bottom-72 {
+    bottom: 18rem;
   }
-    .lg\:-right-24 {
-    right: -6rem;
+    .lg\:-right-14 {
+    right: -3.5rem;
   }
     .lg\:-top-\[250px\] {
     top: -250px;
@@ -3052,24 +3094,6 @@ Bold
   }
     .lg\:right-0 {
     right: 0px;
-  }
-    .lg\:bottom-32 {
-    bottom: 8rem;
-  }
-    .lg\:bottom-64 {
-    bottom: 16rem;
-  }
-    .lg\:-right-16 {
-    right: -4rem;
-  }
-    .lg\:-right-12 {
-    right: -3rem;
-  }
-    .lg\:bottom-72 {
-    bottom: 18rem;
-  }
-    .lg\:-right-14 {
-    right: -3.5rem;
   }
     .lg\:col-span-4 {
     grid-column: span 4 / span 4;
@@ -3129,6 +3153,18 @@ Bold
   }
     .lg\:-mt-3 {
     margin-top: -0.75rem;
+  }
+    .lg\:mt-5 {
+    margin-top: 1.25rem;
+  }
+    .lg\:ml-5 {
+    margin-left: 1.25rem;
+  }
+    .lg\:ml-10 {
+    margin-left: 2.5rem;
+  }
+    .lg\:ml-14 {
+    margin-left: 3.5rem;
   }
     .lg\:block {
     display: block;
@@ -3198,9 +3234,6 @@ Bold
   }
     .lg\:w-\[17\%\] {
     width: 17%;
-  }
-    .lg\:w-\[15\%\] {
-    width: 15%;
   }
     .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -3360,6 +3393,10 @@ Bold
     .lg\:leading-normal {
     line-height: 1.5;
   }
+    .lg\:text-cinzatxt {
+    --tw-text-opacity: 1;
+    color: rgb(88 89 91 / var(--tw-text-opacity));
+  }
 }
 
 @media (min-width: 1214px) {
@@ -3367,6 +3404,9 @@ Bold
         -webkit-clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 60%, 80% 0%);
                 clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 60%, 80% 0%);
     }
+    .xl\:relative {
+    position: relative;
+  }
     .xl\:-top-\[300px\] {
     top: -300px;
   }
@@ -3452,6 +3492,9 @@ Bold
   }
     .xl\:-mt-24 {
     margin-top: -6rem;
+  }
+    .xl\:ml-0 {
+    margin-left: 0px;
   }
     .xl\:block {
     display: block;
@@ -3543,6 +3586,9 @@ Bold
     .xl\:w-\[520px\] {
     width: 520px;
   }
+    .xl\:max-w-\[80\%\] {
+    max-width: 80%;
+  }
     .xl\:grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
@@ -3554,6 +3600,9 @@ Bold
   }
     .xl\:items-start {
     align-items: flex-start;
+  }
+    .xl\:items-center {
+    align-items: center;
   }
     .xl\:justify-start {
     justify-content: flex-start;
@@ -3575,6 +3624,9 @@ Bold
     --tw-space-x-reverse: 0;
     margin-right: calc(3rem * var(--tw-space-x-reverse));
     margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+    .xl\:self-center {
+    align-self: center;
   }
     .xl\:px-14 {
     padding-left: 3.5rem;
@@ -3693,9 +3745,6 @@ Bold
     .xl\:leading-\[0\.98em\] {
     line-height: 0.98em;
   }
-    .xl\:leading-\[1em\] {
-    line-height: 1em;
-  }
     .hover\:xl\:w-\[320px\]:hover {
     width: 320px;
   }
@@ -3734,6 +3783,18 @@ Bold
 
   .\32xl\:-mt-32 {
     margin-top: -8rem;
+  }
+
+  .\32xl\:mr-16 {
+    margin-right: 4rem;
+  }
+
+  .\32xl\:mr-14 {
+    margin-right: 3.5rem;
+  }
+
+  .\32xl\:mr-10 {
+    margin-right: 2.5rem;
   }
 
   .\32xl\:h-\[400px\] {
