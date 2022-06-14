@@ -1472,14 +1472,20 @@ body:not(.lc_mousedrag_is_mobile) #inner {
 .-mt-10 {
   margin-top: -2.5rem;
 }
-.-ml-\[70\%\] {
-  margin-left: -70%;
+.ml-5 {
+  margin-left: 1.25rem;
 }
 .-mt-\[10\%\] {
   margin-top: -10%;
 }
-.ml-5 {
-  margin-left: 1.25rem;
+.ml-10 {
+  margin-left: 2.5rem;
+}
+.mr-7 {
+  margin-right: 1.75rem;
+}
+.ml-0 {
+  margin-left: 0px;
 }
 .mt-\[140px\] {
   margin-top: 140px;
@@ -1487,11 +1493,14 @@ body:not(.lc_mousedrag_is_mobile) #inner {
 .mt-36 {
   margin-top: 9rem;
 }
-.ml-10 {
-  margin-left: 2.5rem;
-}
 .-mt-2 {
   margin-top: -0.5rem;
+}
+.-mb-10 {
+  margin-bottom: -2.5rem;
+}
+.-mt-28 {
+  margin-top: -7rem;
 }
 .-mt-52 {
   margin-top: -13rem;
@@ -1690,9 +1699,6 @@ body:not(.lc_mousedrag_is_mobile) #inner {
 .w-\[62px\] {
   width: 62px;
 }
-.w-\[80\%\] {
-  width: 80%;
-}
 .w-\[108px\] {
   width: 108px;
 }
@@ -1713,6 +1719,9 @@ body:not(.lc_mousedrag_is_mobile) #inner {
 }
 .w-\[64px\] {
   width: 64px;
+}
+.w-\[80\%\] {
+  width: 80%;
 }
 .w-\[85\%\] {
   width: 85%;
@@ -1752,9 +1761,6 @@ body:not(.lc_mousedrag_is_mobile) #inner {
 }
 .max-w-\[420px\] {
   max-width: 420px;
-}
-.max-w-\[80\%\] {
-  max-width: 80%;
 }
 .max-w-\[503px\] {
   max-width: 503px;
@@ -1947,10 +1953,6 @@ body:not(.lc_mousedrag_is_mobile) #inner {
 .border-\[\#05C3DE\] {
   --tw-border-opacity: 1;
   border-color: rgb(5 195 222 / var(--tw-border-opacity));
-}
-.border-black {
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 .border-\[\#FDB515\] {
   --tw-border-opacity: 1;
@@ -2477,6 +2479,12 @@ body:not(.lc_mousedrag_is_mobile) #inner {
 }
 .leading-\[1\.2em\] {
   line-height: 1.2em;
+}
+.leading-normal {
+  line-height: 1.5;
+}
+.leading-relaxed {
+  line-height: 1.625;
 }
 .text-roxo {
   --tw-text-opacity: 1;
@@ -3138,11 +3146,23 @@ Bold
     .lg\:-mt-80 {
     margin-top: -20rem;
   }
-    .lg\:mt-52 {
-    margin-top: 13rem;
+    .lg\:ml-10 {
+    margin-left: 2.5rem;
+  }
+    .lg\:ml-14 {
+    margin-left: 3.5rem;
+  }
+    .lg\:mt-5 {
+    margin-top: 1.25rem;
   }
     .lg\:mt-10 {
     margin-top: 2.5rem;
+  }
+    .lg\:ml-5 {
+    margin-left: 1.25rem;
+  }
+    .lg\:mt-52 {
+    margin-top: 13rem;
   }
     .lg\:mt-6 {
     margin-top: 1.5rem;
@@ -3227,9 +3247,6 @@ Bold
   }
     .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-    .lg\:flex-col {
-    flex-direction: column;
   }
     .lg\:place-content-center {
     place-content: center;
@@ -3353,6 +3370,9 @@ Bold
     .lg\:text-\[24px\] {
     font-size: 24px;
   }
+    .lg\:text-\[26px\] {
+    font-size: 26px;
+  }
     .lg\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -3371,14 +3391,15 @@ Bold
     .lg\:text-\[32px\] {
     font-size: 32px;
   }
-    .lg\:text-\[26px\] {
-    font-size: 26px;
-  }
     .lg\:text-\[23px\] {
     font-size: 23px;
   }
     .lg\:leading-normal {
     line-height: 1.5;
+  }
+    .lg\:text-cinzatxt {
+    --tw-text-opacity: 1;
+    color: rgb(88 89 91 / var(--tw-text-opacity));
   }
 }
 
@@ -3460,6 +3481,9 @@ Bold
   }
     .xl\:mr-5 {
     margin-right: 1.25rem;
+  }
+    .xl\:ml-0 {
+    margin-left: 0px;
   }
     .xl\:ml-\[77px\] {
     margin-left: 77px;
@@ -3563,6 +3587,9 @@ Bold
     .xl\:w-\[520px\] {
     width: 520px;
   }
+    .xl\:max-w-\[80\%\] {
+    max-width: 80%;
+  }
     .xl\:translate-y-6 {
     --tw-translate-y: 1.5rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -3578,6 +3605,9 @@ Bold
   }
     .xl\:items-start {
     align-items: flex-start;
+  }
+    .xl\:items-center {
+    align-items: center;
   }
     .xl\:justify-start {
     justify-content: flex-start;
@@ -3745,8 +3775,8 @@ Bold
     margin-right: 5rem;
   }
 
-  .\32xl\:mr-28 {
-    margin-right: 7rem;
+  .\32xl\:mr-10 {
+    margin-right: 2.5rem;
   }
 
   .\32xl\:mt-16 {
@@ -3755,6 +3785,18 @@ Bold
 
   .\32xl\:-mt-32 {
     margin-top: -8rem;
+  }
+
+  .\32xl\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
+  .\32xl\:mt-20 {
+    margin-top: 5rem;
+  }
+
+  .\32xl\:mt-32 {
+    margin-top: 8rem;
   }
 
   .\32xl\:h-\[400px\] {
