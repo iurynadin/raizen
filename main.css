@@ -61,7 +61,7 @@ Bold
         @apply m-0 p-0 box-border font-din;
     }
 
-    strong{
+    strong {
         @apply font-din_bold;
     }
 
@@ -132,55 +132,53 @@ Bold
     .header.is-spying {
         @apply bg-white border-green-500;
     }
-  
 
-    .sidebar{
-        &__menu{
+    .sidebar {
+        &__menu {
             @apply relative m-0 p-0 pb-4 flex flex-col justify-between items-start w-full;
 
-            li{
-                @apply relative mb-4 text-[#78787A] transition-all duration-300 ;
+            li {
+                @apply relative mb-4 text-[#78787A] transition-all duration-300;
 
-                a{
+                a {
                     @apply relative flex flex-row justify-start items-start opacity-60 transition-all duration-300 pl-24;
 
                     .itemmark {
                         @apply absolute left-0 top-0 w-3 h-10 opacity-0 transition-all duration-300;
                     }
-                    
-                    svg{
+
+                    svg {
                         @apply mr-4;
                     }
 
-                    span{
+                    span {
                         @apply block text-sm font-din leading-snug;
-    
-                        strong{
+
+                        strong {
                             @apply font-din_bold;
                         }
                     }
 
-                    .labelitem{
+                    .labelitem {
                         @apply absolute w-[200px] left-20 top-0 opacity-0 block text-left transition-all duration-300 uppercase;
                     }
                 }
-
             }
         }
 
-        &__menu.is-hovered{
-            li{
-                @apply w-full ;
+        &__menu.is-hovered {
+            li {
+                @apply w-full;
 
-                a{
+                a {
                     @apply opacity-100 pl-[33px];
 
-                    .labelitem{
+                    .labelitem {
                         @apply opacity-40;
                     }
-                    
-                    &:hover{
-                        .labelitem{
+
+                    &:hover {
+                        .labelitem {
                             @apply opacity-100;
                         }
                     }
@@ -188,29 +186,27 @@ Bold
             }
         }
 
-        &__lang{
-            li{
+        &__lang {
+            li {
                 @apply mx-4 font-din_bold text-xl text-cinza0/60;
 
-                a{
+                a {
                     @apply hover:text-cinza0/100 transition-all duration-300;
-
-                    
                 }
             }
         }
     }
 
-    .secondaryNav{
+    .secondaryNav {
         @apply translate-y-secondaryout fixed top-0 h-screen right-0 w-secondary_xs md:w-secondary_md bg-white flex flex-col z-10 pt-[82px] px-6 duration-500 transition-all;
 
         &__menu {
-            li{
+            li {
                 @apply mb-3 w-full;
-                a{
+                a {
                     @apply flex flex-row justify-start items-center text-[17px] uppercase leading-tight text-[#78787A];
 
-                    svg{
+                    svg {
                         @apply mr-5;
                     }
                 }
@@ -218,33 +214,32 @@ Bold
         }
     }
 
-    .secondaryNav.is-active{
+    .secondaryNav.is-active {
         @apply translate-y-0;
     }
 
-    .contentsec{
+    .contentsec {
         @apply relative w-full xl:w-contentsec_xl xl:ml-[240px];
 
-        .container{
+        .container {
             @apply relative lg:px-8;
         }
 
-        h1{
+        h1 {
             @apply text-white font-din_light uppercase text-[32px] xl:text-[54px] 2xl:text-[68px] leading-[0.98em];
         }
 
-        h4{
+        h4 {
             @apply font-din_bold uppercase text-xl xl:text-[22px] 2xl:text-[26px] leading-tight;
         }
 
-        .bigNumber{
+        .bigNumber {
             @apply uppercase text-white font-din_light text-[94px] xl:text-[140px] 2xl:text-[200px] leading-tight;
         }
 
-        p{
+        p {
             @apply font-din_light;
         }
-
     }
 
     video {
@@ -256,12 +251,12 @@ Bold
         left: 0;
     }
 
-    .iconChapter{
+    .iconChapter {
         @apply mt-7 mb-4 xl:my-8 w-5 xl:w-10;
     }
 
-    .borderChapter{
-        @apply absolute block xl:hidden z-[5] top-0 left-0 w-2 lg:w-5 h-screen bg-gradient-to-b ;
+    .borderChapter {
+        @apply absolute block xl:hidden z-[5] top-0 left-0 w-2 lg:w-5 h-screen bg-gradient-to-b;
     }
 
     #wrap {
@@ -274,7 +269,7 @@ Bold
     }
 
     #inner {
-        width:100%;
+        width: 100%;
         height: 100%;
         overflow: auto;
 
@@ -292,64 +287,64 @@ Bold
     }
 
     /* botoes */
-    .borderYbtn{
+    .borderYbtn {
         @apply relative flex justify-between items-center border-t border-b py-7 px-2 hover:px-5 border-roxo hover:border-transparent transition-all duration-300;
 
-        span{
+        span {
             @apply uppercase text-roxo 
             text-[26px]
             md:text-[32px]
             xl:text-[22px] leading-tight;
         }
 
-        span + div{
+        span + div {
             @apply absolute top-0 left-0 z-0 w-full h-[3px] bg-gradient-to-r from-[#F57920] to-[#781E77] opacity-[0.15] block transition-all duration-300;
         }
     }
 
-    .borderYbtn-sm{
+    .borderYbtn-sm {
         @apply relative flex justify-between items-center border-t border-b py-7 px-2 hover:px-5 border-roxo hover:border-transparent transition-all duration-300;
 
-        span{
+        span {
             @apply uppercase text-roxo 
             md:text-[28px]
             xl:text-[22px] leading-tight;
         }
 
-        span + div{
+        span + div {
             @apply absolute top-0 left-0 z-0 w-full h-[3px] bg-gradient-to-r from-[#F57920] to-[#781E77] opacity-[0.15] block transition-all duration-300;
         }
     }
 
-    .btnBox{
+    .btnBox {
         @apply flex items-center justify-between p-8 border-[3px] bg-white hover:bg-roxo border-white drop-shadow-lg transition-all duration-300;
 
-        span{
+        span {
             @apply leading-tight text-[#303330]  duration-300 transition-all;
         }
     }
 
-    .boxDist{
-        &__holderimg{
+    .boxDist {
+        &__holderimg {
             @apply h-[190px] md:h-[280px] block overflow-hidden;
 
-            img{
+            img {
                 @apply w-full h-full object-cover object-center lg:object-bottom;
             }
         }
-        &__bar{
-            @apply w-full block h-[18px] 2xl:h-[20px] ;
+        &__bar {
+            @apply w-full block h-[18px] 2xl:h-[20px];
         }
 
-        span{
+        span {
             @apply font-din_bold text-[26px] md:text-[40px] block  leading-tight mt-3;
 
-            span{
+            span {
                 @apply text-lg leading-tight mt-0 inline;
             }
         }
 
-        p{
+        p {
             @apply text-[17px] md:text-xl text-cinzatxt font-din_bold leading-[0.98em];
         }
     }
@@ -365,15 +360,15 @@ Bold
         clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 20%, 90% 0%);
     }
     .footer-sm {
-        clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 30%, 80% 0%);    
+        clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 30%, 80% 0%);
     }
     .footer-lg {
-        clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 80%, 70% 0%);    
+        clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 80%, 70% 0%);
     }
     .footer-xl {
         clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 60%, 80% 0%);
     }
-    
+
     .full-width {
         width: 100vw;
         position: relative;

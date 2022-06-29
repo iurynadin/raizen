@@ -59,7 +59,7 @@ module.exports = {
                 moviefilter: "url('../svgs/movie-filter.svg')",
                 destaquesafra: "url('../imgs/bg-destaquesafra.jpg')",
                 hexagcontent: "url('../svgs/hexag-safracontent.svg')",
-                mensagem: "url('../imgs/bg-mensagem.jpg')",
+                mensagem: "url('../imgs/bg-mensagem2.jpg')",
                 maparoxo: "url('../imgs/mapa-roxo.jpg')",
                 modelounico: "url('../imgs/bg-modelounico.jpg')",
                 modelounicomobile: "url('../imgs/bg-munico-mobile.jpg')",
