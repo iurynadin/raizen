@@ -51,6 +51,12 @@
     );
     
     lc_mouseDrag('#inner', 0.3, false, false);
+
+    $(".expandMsg").on("click", function (event) {
+        event.preventDefault();
+        console.log('toggle content');
+        $("#restoMsg").toggleClass("is-active");
+    })
     
 })(jQuery);
 

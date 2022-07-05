@@ -383,4 +383,13 @@ Bold
         margin-left: -50vw;
         margin-right: -50vw;
     }
+
+    .collapse__content {
+        /* We set the max-height using the --collapse-height
+        CSS custom property. If the custom property is
+        missing then the fallback value of 0 is used.
+        By toggling the value of the custom property with
+        JavaScript we can animate the max-height. */
+        max-height: var(--collapse-height, 0);
+    }
 }

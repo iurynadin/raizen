@@ -3,11 +3,12 @@
     <head>
         <meta charset="utf-8" />
         <wc-meta title="Raízen - Relatório Anula de Resposabilidade 2021/2022"></wc-meta>
+        <script src="//unpkg.com/alpinejs" defer></script>
         <link rel="stylesheet" type="text/css" href="css/style.css?v=0.9.67" />
         <link rel="stylesheet" src="https://cdn.jsdelivr.net/gh/cotton123236/zoomist@latest/dist/zoomist.min.css"/>
     </head>
     <body class="w-full">
-        <div class="bpvisor"><p></p></div>
+        <!-- <div class="bpvisor"><p></p></div> -->
         <main>
 
             <!-- HeaderNav -->
@@ -250,7 +251,7 @@
                         </div>
 
                         <div class="pt-14 xl:pt-40">
-                           <p class="text-roxo font-din_light leading-snug xl:leading-tight text-[20px] lg:text-[22px] xl:text-[30px] 2xl:text-[41px]">Somos a Raízen, empresa integrada e referência global em bioenergia. <br>
+                            <p class="text-roxo font-din_light leading-snug xl:leading-tight text-[20px] lg:text-[22px] xl:text-[30px] 2xl:text-[41px]">Somos a Raízen, empresa integrada e referência global em bioenergia. <br>
                             Atuamos há mais de 10 anos, planejando a energia do futuro com inovação e tecnologia. <br>
                             Queremos promover uma matriz cada vez mais limpa para a economia de baixo carbono.</p>
                         </div>
@@ -539,10 +540,11 @@
                     xl:left-[-130px] xl:bottom-[-210px] xl:w-[600px] 
                     " alt="">
             </section>
-            <section class="contentsec msgCEO">
+            <section class="contentsec msgCEO" x-data="{selected:null}">
 
                 <img src="./imgs/presidente.png" class="hidden lg:block absolute 
                 h-[290px] left-[-180px] top-[-90px]
+                lg:h-[24vw] lg:top-[-10px]
                 xl:h-[25vw] xl:top-[-40px]
                 2xl:h-[400px] 2xl:top-[-60px]" alt="">
 
@@ -552,13 +554,11 @@
                         <p>Evoluímos também no desenvolvimento do biogás. Já contamos com uma das maiores plantas do mundo produzindo biogás para ser convertido em energia elétrica. Em 2021/2022, anunciamos a construção de nossa primeira planta de biometano, produzido a partir do biogás, como um substituto para gás natural, diesel, gás liquefeito de petróleo (GLP) e óleo combustível. A intenção é seguir acrescentando capacidade de geração a partir do biogás e desenvolvendo projetos de biometano em todos os nossos parques de bioenergia até o fim da década da ação.</p>
                         
                         <p>Além de oferecer cada vez mais formas de nossos clientes consumirem energia limpa, estamos comprometidos com o aumento da eficiência operacional. Por isso a nossa segunda meta visa <strong>reduzir a pegada de carbono do etanol em 20%</strong>, percentual que era de 10% em 2018/2019 quando assumimos compromissos públicos.</p>
-
                     </div>
                 </div>
 
                 <div class="container flex flex-col justify-start items-start">
-
-                    <div class="md:w-9/12 lg:w-8/12 lg:mt-6">
+                    <div class="relative overflow-hidden transition-all max-h-0 duration-500 md:w-9/12 lg:w-8/12" x-ref="container3" x-bind:style="selected == 1 ? 'max-height: ' + $refs.container3.scrollHeight + 'px' : ''">
 
                         <p>A redução da pegada de carbono está diretamente relacionada à melhoria contínua do processo produtivo, com aumento da produtividade no campo, fortalecimento da economia circular, aumento da eficiência energética e otimização da nossa logística. Entre os aliados nessa jornada, destaco nosso Pulse Hub, que conecta <i>startups</i> às nossas áreas de negócio; e o SER+, programa de melhoria contínua que já está sendo executado em 23 parques de bioenergia e gradualmente será estendido para toda a cadeia de produção agroindustrial.</p>
 
@@ -585,6 +585,14 @@
                         <span class="text-cinzatxt">CEO da Raízen</span>
 
                     </div>
+                    
+                </div>
+
+                <div class="container flex flex-col justify-start items-end -mt-8">
+                    <button type="button" class="w-full md:w-9/12 lg:w-8/12 xl:w-1/2 border-t border-slate-400 flex items-center justify-between p-6 bg-white" @click="selected !== 1 ? selected = 1 : selected = null">
+                        <span class="uppercase text-[22px] font-din_light text-roxo leading-none" x-text="selected == 1 ? 'Fechar' : 'Continuar lendo'"></span>
+                        <img src="./svgs/plus.svg" class="w-8 transition-all duration-300" x-bind:class="selected == 1 ? 'rotate-45' : ''" alt="">
+                    </button>
                 </div>
 
                 <div class="container flex justify-center xl:justify-start items-end mt-10 lg:mt-20">
