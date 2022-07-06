@@ -134,6 +134,11 @@ Bold
     }
 
     .sidebar {
+
+        &__logo {
+            @apply w-[143px] mb-2 2xl:mb-4 cursor-pointer;
+        }
+
         &__menu {
             @apply relative m-0 p-0 pb-4 flex flex-col justify-between items-start w-full;
 

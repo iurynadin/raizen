@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <wc-meta title="Raízen - Annual Sustainability Report 2021/2022"></wc-meta>
+        <script src="//unpkg.com/alpinejs" defer></script>
         <link rel="stylesheet" type="text/css" href="css/style.css?v=0.9.66" />
         <link rel="stylesheet" src="https://cdn.jsdelivr.net/gh/cotton123236/zoomist@latest/dist/zoomist.min.css"/>
     </head>
@@ -111,7 +112,7 @@
             <div class="sidebar hidden xl:flex xl:w-[240px] xl:h-screen fixed z-30 bg-white top-0 left-0 flex-col items-start justify-between hover:xl:w-[320px] transition-all duration-[200]">
                 
                 <div class="pt-3 2xl:pt-6 pl-[33px]">
-                    <img src="./svgs/logo.svg" class="w-[143px] mb-2 2xl:mb-4" alt="Logo Raizen">
+                    <img src="./svgs/logo.svg" class="sidebar__logo" alt="Logo Raizen">
                     <span class="text-[15px] leading-snug text-[#78787A] inline-block">ANNUAL SUSTAINABILITY<br> REPORT<span class="font-din_bold block">2021/2022</span> </span>
                 </div>
 
@@ -204,7 +205,7 @@
 
 
             <!-- Hero -->
-            <section class="relative h-screen  md:h-[500px] lg:h-screen bg-roxo bg-heromobile bg-center bg-cover bg-no-repeat md:bg-none flex flex-col items-end justify-center pr-10 sm:pr-20 xl:pr-20">
+            <section class="relative h-screen  md:h-[500px] lg:h-screen bg-roxo bg-heromobile bg-center bg-cover bg-no-repeat md:bg-none flex flex-col items-end justify-center pr-10 sm:pr-20 xl:pr-20" id="hero">
 
                 <h1 class="text-white uppercase text-right font-din_ultralight relative z-[5]">
                     <span class="text-[44px] lg:text-[61px] xl:text-[70px] 2xl:text-[84px] leading-[0.99em]">
@@ -534,7 +535,7 @@
                     xl:left-[-130px] xl:bottom-[-210px] xl:w-[600px] 
                     " alt="">
             </section>
-            <section class="contentsec msgCEO">
+            <section class="contentsec msgCEO" x-data="{selected:null}">
 
                 <img src="./imgs/presidente.png" class="hidden lg:block absolute 
                 h-[290px] left-[-180px] top-[-90px]
@@ -548,8 +549,11 @@
                         <p>Not only are we creating new ways for customers to consume clean energy but we are also committed to improving the efficiency of our own operations. To this end, our second target is to <strong>reduce our ethanol carbon footprint by 20%</strong>, compared to a target of 10% in 2018/2019 when we first undertook public commitments.</p>
 
                     </div>
+                </div>
 
-                    <div class="md:w-9/12 lg:w-8/12 lg:mt-6">
+                <div class="container flex flex-col justify-start items-start">
+                    <div class="relative overflow-hidden transition-all max-h-0 duration-500 md:w-9/12 lg:w-8/12" x-ref="container3" x-bind:style="selected == 1 ? 'max-height: ' + $refs.container3.scrollHeight + 'px' : ''">
+
                         <p>We will continue to reduce our carbon footprint by improving our production processes, increasing sugarcane yields, advancing the circular economy, optimizing energy efficiency and streamlining our logistics. Supporting us in this journey, Raízen’s Pulse Hub helps connect startups to our different business units; while our SER+ program, a continuous improvement initiative that is already in place at 23 of our bioenergy operations, will be gradually rolled out across the wider company.</p> 
 
                         <p>As a result of our two first targets, we will deliver increasingly premium products to highly demanding, value-added markets in Brazil and around the world. This brings us to our third target: <strong>to have 80% of our adjusted EBITDA coming from renewable businesses by 2030</strong>, demonstrating that the energy transition is not only profitable but also an opportunity worth investing in.</p>
@@ -573,6 +577,14 @@
                         <span class="text-xl text-roxo block font-din_bold">Ricardo Mussa</span>
                         <span class="text-cinzatxt">CEO</span>
                     </div>
+                </div>
+
+
+                <div class="container flex flex-col justify-start items-end -mt-8">
+                    <button type="button" class="w-full md:w-9/12 lg:w-8/12 xl:w-1/2 border-t border-slate-400 flex items-center justify-between p-6 bg-white" @click="selected !== 1 ? selected = 1 : selected = null">
+                        <span class="uppercase text-[22px] font-din_light text-roxo leading-none" x-text="selected == 1 ? 'close' : 'Keep reading'"></span>
+                        <img src="./svgs/plus.svg" class="w-8 transition-all duration-300" x-bind:class="selected == 1 ? 'rotate-45' : ''" alt="">
+                    </button>
                 </div>
 
                 <div class="container flex justify-center xl:justify-start items-end mt-10 lg:mt-20">

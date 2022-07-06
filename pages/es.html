@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <wc-meta title="Raízen - Informe Anual de Sostenibilidad 2021/2022"></wc-meta>
+        <script src="//unpkg.com/alpinejs" defer></script>
         <link rel="stylesheet" type="text/css" href="css/style.css?v=0.9.66" />
         <link rel="stylesheet" src="https://cdn.jsdelivr.net/gh/cotton123236/zoomist@latest/dist/zoomist.min.css"/>
     </head>
@@ -111,7 +112,7 @@
             <div class="sidebar hidden xl:flex xl:w-[240px] xl:h-screen fixed z-30 bg-white top-0 left-0 flex-col items-start justify-between hover:xl:w-[320px] transition-all duration-[200]">
                 
                 <div class="pt-3 2xl:pt-6 pl-[33px]">
-                    <img src="./svgs/logo.svg" class="w-[143px] mb-2 2xl:mb-4" alt="Logo Raizen">
+                    <img src="./svgs/logo.svg" class="sidebar__logo" alt="Logo Raizen">
                     <span class="text-[15px] leading-snug text-[#78787A] inline-block">INFORME ANUAL DE<br> SOSTENIBILIDAD<span class="font-din_bold block">2021/2022</span> </span>
                 </div>
 
@@ -204,7 +205,7 @@
 
 
             <!-- Hero -->
-            <section class="relative h-screen  md:h-[500px] lg:h-screen bg-roxo bg-heromobile bg-center bg-cover bg-no-repeat md:bg-none flex flex-col items-end justify-center pr-10 sm:pr-20 xl:pr-20">
+            <section class="relative h-screen  md:h-[500px] lg:h-screen bg-roxo bg-heromobile bg-center bg-cover bg-no-repeat md:bg-none flex flex-col items-end justify-center pr-10 sm:pr-20 xl:pr-20" id="hero">
 
                 <h1 class="text-white uppercase text-right font-din_ultralight relative z-[5]">
                     <span class="text-[44px] lg:text-[61px] xl:text-[70px] 2xl:text-[84px] leading-[0.99em]">
@@ -513,7 +514,7 @@
                         <p>Cuando afirmo que estamos liderando la transición energética, me refiero a que sabemos exactamente cómo, cuándo y dónde queremos llegar. Esta trayectoria no comienza ahora, tampoco la trazamos solos. En el transcurso de los últimos once años, fortalecimos una plataforma integrada y no reproducible, vector de soluciones que redefine el futuro de la energía y se dedica a fomentar el impacto positivo en todos los emprenden nuestro camino con nosotros.</p>
                         <p>Como prestamos atención a las más complejas demandas de la sociedad, somos hoy por hoy el mejor socio de nuestros clientes en materia de descarbonización de sus matrices energéticas. Queremos ir más allá, orientados por metas sólidas, factibles, en línea con nuestro propósito y ampliamente estudiadas por los diversos liderazgos de este increíble equipo.</p> 
                         <p>En ese sentido, en 2021-2022 alineamos nuestros compromisos públicos con la urgencia de la década de la acción, período crítico hasta 2030 en el que, de acuerdo con las Naciones Unidas, el mundo tendrá que acelerar la implementación de soluciones sostenibles para reducir las emisiones globales. Como resultado, establecimos nuevas metas, que refuerzan nuestro papel en la transición energética y en el combate a los cambios climáticos.</p> 
-                        <p>Lideramos porque estamos al frente de las demandas, anticipando soluciones para facilitar la descarbonización. Nuestra cartera de renovables se compone del etanol de primera generación, que ya es maravilloso, pues permite una reducción del 80 % de las emisiones en comparación con la gasolina, de la cogeneración de electricidad a partir del procesamiento de la caña de azúcar, del etanol de segunda generación (E2G), que emite un 30 % menos que el etanol tradicional y, como se fabrica a partir de residuos como el bagazo y la paja de la caña de azúcar, aumenta en un 50 % nuestro potencial de producción de biocombustibles sin necesidad de aumentar el área cultivada, así como el biogás y el biometano, la energía solar y otras fuentes que vamos integrando a nuestro ecosistema, <strong>con lo cual ampliaremos la producción de renovables en un 80 % hasta 2030</strong> (nuestra primera meta relacionada con los cambios climáticos).</p>
+                        <p>Lideramos porque estamos al frente de las demandas, anticipando soluciones para facilitar la descarbonización. Nuestra cartera de renovables se compone del etanol de primera generación, que ya es maravilloso, pues permite una reducción del 80 % de las emisiones en comparación con la gasolina, de la cogeneración de electricidad a partir del bagazo de la caña de azúcar, del etanol de segunda generación (E2G), que emite un 30 % menos que el etanol tradicional y, como se fabrica a partir de residuos como el bagazo y la paja de la caña de azúcar, aumenta en un 50 % nuestro potencial de producción de biocombustibles sin necesidad de aumentar el área cultivada, así como el biogás y el biometano, la energía solar y otras fuentes que vamos integrando a nuestro ecosistema, <strong>con lo cual ampliaremos la producción de renovables en un 80 % hasta 2030</strong> (nuestra primera meta relacionada con los cambios climáticos).</p>
                         <p>Los movimientos que se proponen alcanzar ese objetivo ya se pusieron de manifiesto durante el año zafra: integramos los activos de Biosev, con lo cual comenzamos a operar 35 parques de bioenergía y ampliamos nuestra capacidad instalada de cogeneración a 1,5 GW, agregamos nuevas fuentes de energía a nuestra cartera con la adquisición de Gera y aportamos capital en Tupinambá Energia para acelerar la red de recarga del segmento de movilidad eléctrica en Brasil.</p>
                         <p>También anunciamos las obras de tres nuevas plantas de E2G en Guariba, Valparaíso y Barra Bonita, todas en el interior del estado de São Paulo. Con su entrada en operación, que se prevé hasta 2024, esas plantas aportarán 246 millones de litros de biocombustible a nuestra capacidad instalada de producción anual, que llegará a 280 millones de litros, de los cuales el 80 % ya se comercializó a través de contratos a largo plazo. Nuestro plan de crecimiento prevé 20 plantas hasta 2030.</p>
                     </div>
@@ -529,7 +530,7 @@
                     xl:left-[-130px] xl:bottom-[-210px] xl:w-[600px] 
                     " alt="">
             </section>
-            <section class="contentsec msgCEO">
+            <section class="contentsec msgCEO" x-data="{selected:null}">
 
                 <img src="./imgs/presidente.png" class="hidden lg:block absolute 
                 h-[290px] left-[-180px] top-[-90px]
@@ -543,8 +544,11 @@
                         <p>Además de ofrecer a nuestros clientes cada vez más formas de consumo de energía limpia, estamos comprometidos con el aumento de la eficiencia operativa. Por eso, nuestra segunda meta es <strong>reducir la huella de carbono del etanol en un 20 %</strong>, porcentaje que era del 10 % en 2018-2019, cuando asumimos compromisos públicos.</p>
 
                     </div>
+                </div>
 
-                    <div class="md:w-9/12 lg:w-8/12 lg:mt-6">
+                <div class="container flex flex-col justify-start items-start">
+                    <div class="relative overflow-hidden transition-all max-h-0 duration-500 md:w-9/12 lg:w-8/12" x-ref="container3" x-bind:style="selected == 1 ? 'max-height: ' + $refs.container3.scrollHeight + 'px' : ''">
+
                         <p>La reducción de la huella de carbono se relaciona directamente con la mejora continua del proceso de producción, el aumento de la productividad en el campo, el fortalecimiento de la economía circular, el aumento de la eficiencia energética y la optimización de nuestra logística. Entre los aliados en esta jornada merecen mención especial nuestro Pulse Hub, que conecta <i>startups</i> con nuestras áreas de negocio, y SER+, programa de mejora continua que ya se implementó en 23 parques de bioenergía y gradualmente se extenderá a toda la cadena de producción agroindustrial. </p>
 
                         <p>Como reflejo de las dos primeras metas, introduciremos en el mercado cada vez más productos <i>premium</i>, demandados por mercados exigentes y de mayor valor agregado en Brasil y en el resto del mundo. Así, establecimos nuestra tercera meta, que consiste en <strong>contar con un 80 % de EBITDA ajustado proveniente de negocios renovables hasta 2030</strong>, con lo cual comprobamos que la transición energética es rentable y constituye una oportunidad en la cual vale la pena invertir.</p>
@@ -569,6 +573,14 @@
                         <span class="text-cinzatxt">CEO de Raízen</span>
 
                     </div>
+                    
+                </div>
+
+                <div class="container flex flex-col justify-start items-end -mt-8">
+                    <button type="button" class="w-full md:w-9/12 lg:w-8/12 xl:w-1/2 border-t border-slate-400 flex items-center justify-between p-6 bg-white" @click="selected !== 1 ? selected = 1 : selected = null">
+                        <span class="uppercase text-[22px] font-din_light text-roxo leading-none" x-text="selected == 1 ? 'Cerrar' : 'Sigue leyendo'"></span>
+                        <img src="./svgs/plus.svg" class="w-8 transition-all duration-300" x-bind:class="selected == 1 ? 'rotate-45' : ''" alt="">
+                    </button>
                 </div>
 
                 <div class="container flex justify-center xl:justify-start items-end mt-10 lg:mt-20">

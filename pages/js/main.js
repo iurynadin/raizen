@@ -57,6 +57,14 @@
         console.log('toggle content');
         $("#restoMsg").toggleClass("is-active");
     })
+
+    $(".sidebar__logo").on("click", function (event) {
+        event.preventDefault();
+        console.log('back to top');
+        $("html, body")
+                .stop()
+                .animate({ scrollTop: $('#hero').offset().top, }, 600, "easeInOutExpo" );
+    })
     
 })(jQuery);
 
