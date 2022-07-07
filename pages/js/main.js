@@ -4,6 +4,7 @@
         console.log("menu");
         event.preventDefault();
     });
+
     function toggleMenu() {
         $(".navbar-burger").toggleClass("is-active");
         if (window.innerWidth <= 1213) {
@@ -22,34 +23,37 @@
             setTimeout(function () {
                 $("html, body")
                     .stop()
-                    .animate({ scrollTop: $(url).offset().top, }, 800, "easeInOutExpo" );
+                    .animate({
+                        scrollTop: $(url).offset().top,
+                    }, 800, "easeInOutExpo");
             }, 200);
 
         }
     );
 
-    $(".sidebar__menu li a").on( "click", function (event) {
-            event.preventDefault();
-            var url = $(this).attr("href");
-            var duration = ($(this).data("duration")) ? $(this).data("duration") : 800;
-            $("html, body")
-                .stop()
-                .animate({ scrollTop: $(url).offset().top, }, duration, "easeInOutExpo" );
+    $(".sidebar__menu li a").on("click", function (event) {
+        // event.preventDefault();
+        var url = $(this).attr("href");
+        var duration = ($(this).data("duration")) ? $(this).data("duration") : 800;
+        $("html, body")
+            .stop()
+            .animate({
+                scrollTop: $(url).offset().top,
+            }, duration, "easeInOutExpo");
 
-        }
-    );
+    });
 
     $(".sidebar").hover(
-        function(){
+        function () {
             console.log('mouseover');
             $('.sidebar__menu').toggleClass('is-hovered')
         },
-        function(){
+        function () {
             console.log('mouseleave');
             $('.sidebar__menu').toggleClass('is-hovered')
         }
     );
-    
+
     lc_mouseDrag('#inner', 0.3, false, false);
 
     $(".expandMsg").on("click", function (event) {
@@ -62,17 +66,19 @@
         event.preventDefault();
         console.log('back to top');
         $("html, body")
-                .stop()
-                .animate({ scrollTop: $('#hero').offset().top, }, 600, "easeInOutExpo" );
+            .stop()
+            .animate({
+                scrollTop: $('#hero').offset().top,
+            }, 600, "easeInOutExpo");
     })
-    
+
 })(jQuery);
 
 function init() {
     window.addEventListener("scroll", function (e) {
         var distanceY =
-                window.pageYOffset ||
-                document.documentElement.scrollTop,
+            window.pageYOffset ||
+            document.documentElement.scrollTop,
             shrinkOn = 500,
             hamb = document.querySelector("hamb");
 
@@ -86,6 +92,3 @@ function init() {
     });
 }
 window.onload = init();
-
-  
-    
